@@ -1444,7 +1444,7 @@ video{
 }
 
 #projects-graphic{
-    height: 2880px;
+    height: 2930px;
 
 }
 .cuadrado-graphic1{
@@ -1460,13 +1460,13 @@ video{
     width: 350px;
     height: 350px;
     margin-left: 100px;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 .cuadrado-graphic3{
     width: 550px;
     height: 255px;
     margin-left: 200px;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 .cuadrado-graphic4{
     background: url(img/caja-baja.jpg) no-repeat 50% 50%;
@@ -1474,7 +1474,7 @@ video{
     width: 350px;
     height: 250px;
     margin-left: 50px;
-    margin-top: 220px;
+    margin-top: 50px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -1482,14 +1482,14 @@ video{
     width: 350px;
     height: 360px;
     margin-left: 300px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .cuadrado-graphic6{
  
     width: 350px;
     height: 255px;
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -1497,7 +1497,7 @@ video{
     width: 400px;
     height: 500px;
     margin-left: 150px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .cuadrado-graphic8{
@@ -1508,7 +1508,7 @@ video{
     height: 300px;
     color: #fff;
     margin-left: 210px;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 /*---------------page graphic end---------------*/
@@ -2233,7 +2233,7 @@ video{
 }
 
 #projects-graphic{
-    height: 3580px;
+    height: 3550px;
 
 }
 .cuadrado-graphic1{
@@ -2249,12 +2249,13 @@ video{
     width: 100%;
     height: 450px;
     margin-left: 0px;
+    margin-top: 35px;
 }
 .cuadrado-graphic3{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .cuadrado-graphic4{
     background: url(img/caja-baja.jpg) no-repeat 50% 50%;
@@ -2262,7 +2263,7 @@ video{
     width: 100%;
     height: 340px;
     margin-left: 0px;
-    margin-top: 225px;
+    margin-top: 45px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -2270,13 +2271,14 @@ video{
     width: 100%;
     height: 500px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 35px;
+
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -2284,7 +2286,7 @@ video{
     width: 100%;
     height: 700px;
     margin-left: 0px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .cuadrado-graphic8{
@@ -2293,7 +2295,7 @@ video{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -120px;
+    margin-top: -85px;
     margin-bottom: -100px;
 }
 
@@ -3018,7 +3020,7 @@ span.h1:hover::before{
 
 
 #projects-graphic{
-    height: 3300px;
+    height: 3350px;
 
 }
 .cuadrado-graphic1{
@@ -3035,12 +3037,13 @@ span.h1:hover::before{
     width: 100%;
     height: 450px;
     margin-left: 0px;
+    margin-top: 35px;
 }
 .cuadrado-graphic3{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 35px;
 }
 .cuadrado-graphic4{
     background: url(img/caja-baja.jpg) no-repeat 50% 50%;
@@ -3048,7 +3051,7 @@ span.h1:hover::before{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 210px;
+    margin-top: 35px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -3056,14 +3059,14 @@ span.h1:hover::before{
     width: 100%;
     height: 400px;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
     width: 100%;
     height: 290px;
     margin-left: 0px;
     margin-bottom: 0px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -3071,7 +3074,7 @@ span.h1:hover::before{
     width: 100%;
     height: 700px;
     margin-left: 0px;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .cuadrado-graphic8{
@@ -3080,7 +3083,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -140px;
+    margin-top: -90px;
     margin-bottom: -100px;
 }
 
@@ -3809,7 +3812,6 @@ span.h1:hover::before{
     width: 100%;
     height: 280px;
     margin-left: 0px;
-    margin-bottom: -10px;
 }
 .cuadrado-graphic2{
     background: url(img/JISOO1.JPG) no-repeat 50% 50%;
@@ -3817,11 +3819,16 @@ span.h1:hover::before{
     width: 100%;
     height: 450px;
     margin-left: 0px;
+    margin-top: 40px;
+
+
 }
 .cuadrado-graphic3{
     width: 100%;
     height: 200px;
     margin-left: 0px;
+    margin-top: 35px;
+
 }
 .cuadrado-graphic4{
     background: url(img/caja-baja.jpg) no-repeat 50% 50%;
@@ -3829,7 +3836,7 @@ span.h1:hover::before{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    top: -20px;
+    margin-top: 120px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -3837,14 +3844,14 @@ span.h1:hover::before{
     width: 100%;
     height: 400px;
     margin-left: 0px;
-    top: 0px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
     width: 100%;
     height: 290px;
     margin-left: 0px;
     margin-bottom: 0px;
-    top: 30px;
+    margin-top: 35px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -3852,7 +3859,7 @@ span.h1:hover::before{
     width: 100%;
     height: 700px;
     margin-left: 0px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .cuadrado-graphic8{
@@ -3861,7 +3868,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -140px;
+    margin-top: -100px;
     margin-bottom: -100px;
 }
 
@@ -4583,7 +4590,7 @@ span.h1:hover::before{
 
 
 #projects-graphic{
-    height: 2830px;
+    height: 2820px;
 
 }
 .cuadrado-graphic1{
@@ -4611,7 +4618,7 @@ span.h1:hover::before{
     width: 100%;
     height: 250px;
     margin-left: 0px;
-    margin-top: 125px;
+    margin-top: 35px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -4619,7 +4626,7 @@ span.h1:hover::before{
     width: 100%;
     height: 340px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
     background: url(img/DHUB.mp4) no-repeat 50% 50%;
@@ -4627,7 +4634,7 @@ span.h1:hover::before{
     width: 100%;
     height: 240px;
     margin-left: 0px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -4635,7 +4642,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: 105px;
+    margin-top: 35px;
 }
 
 .cuadrado-graphic8{
@@ -4644,7 +4651,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -165px;
+    margin-top: -125px;
     margin-bottom: -120px;
 }
 
@@ -5375,7 +5382,7 @@ span.h1:hover::before{
 
 
 #projects-graphic{
-    height: 2350px;
+    height: 2330px;
 
 }
 .cuadrado-graphic1{
@@ -5403,7 +5410,7 @@ span.h1:hover::before{
     width: 100%;
     height: 210px;
     margin-left: 0px;
-    margin-top: 155px;
+    margin-top: 65px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -5411,7 +5418,7 @@ span.h1:hover::before{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
     background: url(img/DHUB.mp4) no-repeat 50% 50%;
@@ -5419,7 +5426,7 @@ span.h1:hover::before{
     width: 100%;
     height: 210px;
     margin-left: 0px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 50% 50%;
@@ -5427,7 +5434,7 @@ span.h1:hover::before{
     width: 100%;
     height: 400px;
     margin-left: 0px;
-    margin-top: 105px;
+    margin-top: 35px;
 }
 
 .cuadrado-graphic8{
@@ -5436,7 +5443,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -185px;
+    margin-top: -145px;
     margin-bottom: -150px;
 }
 
@@ -6192,7 +6199,7 @@ span.h1:hover::before{
     width: 100%;
     height: 210px;
     margin-left: 0px;
-    margin-top: 120px;
+    margin-top: 35px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 50% 50%;
@@ -6200,14 +6207,14 @@ span.h1:hover::before{
     width: 100%;
     height: 300px;
     margin-left: 0px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .cuadrado-graphic6{
 
     width: 100%;
     height: 180px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 35px;
     
 }
 .cuadrado-graphic7{
@@ -6216,7 +6223,7 @@ span.h1:hover::before{
     width: 100%;
     height: 400px;
     margin-left: 0px;
-    margin-top: 105px;
+    margin-top: 35px;
 }
 
 .cuadrado-graphic8{
@@ -6225,7 +6232,7 @@ span.h1:hover::before{
     width: 100%;
     height: 600px;
     margin-left: 0px;
-    margin-top: -205px;
+    margin-top: -165px;
     margin-bottom: -170px;
 }
 
