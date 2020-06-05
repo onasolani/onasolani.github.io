@@ -475,6 +475,15 @@ video{
     margin-top: -270px;
 }
 
+.cuadrado-ux-ui5{
+    background: url(img/aqua_web.png) no-repeat 10% 50%;
+    background-size: 100%;
+    width: 580px;
+    height: 380px;
+    margin-left: 210px;
+    margin-top: 50px;
+}
+
 /*---------------page ux/ui end---------------*/
 
 /*---------------page graphic start---------------*/
@@ -528,7 +537,7 @@ video{
     height: 450px;
     color: #fff;
     margin-left: 130px;
-    top: 80px;
+    margin-top: 90px;
 }
 .cuadrado-graphic6{
     position: relative;
@@ -536,17 +545,28 @@ video{
     height: 350px;
     color: #fff;
     margin-left: 680px;
-    top: 20px;
+    margin-top: 40px;
 }
 .cuadrado-graphic7{
     background: url(img/JISOO.JPG) no-repeat 60% 60%;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     width: 400px;
-    height: 500px;
+    height: 650px;
     color: #fff;
     margin-left: 210px;
-    top: -80px;
+    margin-top: 30px;
+}
+
+.cuadrado-graphic8{
+    background: url(img/logo_1.png) no-repeat 60% 60%;
+    background-size: 100%;
+    position: relative;
+    width: 570px;
+    height: 320px;
+    color: #fff;
+    margin-left: 310px;
+    margin-top: 50px;
 }
 
 
