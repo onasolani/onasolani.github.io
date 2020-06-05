@@ -490,7 +490,7 @@ video{
 
 
 #projects-graphic{
-    height: 700px;
+    height: 3000px;
 
 }
 .cuadrado-graphic1{
@@ -509,7 +509,7 @@ video{
     height: 450px;
     color: #fff;
     margin-left: 770px;
-    top: -140px;
+    margin-top: -140px;
 }
 .cuadrado-graphic3{
     position: relative;
@@ -517,7 +517,7 @@ video{
     height: 350px;
     color: #fff;
     margin-left: 100px;
-    top: -240px;
+    margin-top: -40px;
 }
 .cuadrado-graphic4{
     background: url(img/caja-baja.jpg) no-repeat 10% 60%;
@@ -527,7 +527,7 @@ video{
     height: 450px;
     color: #fff;
     margin-left: 690px;
-    top: 150px;
+    margin-top: 0px;
 }
 .cuadrado-graphic5{
     background: url(img/foto2.JPG) no-repeat 60% 60%;
@@ -537,7 +537,7 @@ video{
     height: 450px;
     color: #fff;
     margin-left: 130px;
-    margin-top: 90px;
+    margin-top: 0px;
 }
 .cuadrado-graphic6{
     position: relative;
@@ -548,25 +548,24 @@ video{
     margin-top: 40px;
 }
 .cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 60% 60%;
+    background: url(img/JISOO.JPG) no-repeat 60% 0%;
     background-size: 100%;
     position: relative;
     width: 400px;
     height: 650px;
     color: #fff;
-    margin-left: 210px;
-    margin-top: 30px;
+    margin-left: 190px;
+    margin-top: -150px;
 }
 
 .cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 60% 60%;
+    background: url(img/logo_1.png) no-repeat 60% 0%;
     background-size: 100%;
     position: relative;
     width: 570px;
-    height: 320px;
-    color: #fff;
-    margin-left: 310px;
-    margin-top: 50px;
+    height: 420px;
+    margin-left: 660px;
+    margin-top: -200px;
 }
 
 
