@@ -13,9 +13,8 @@ html, body {
     max-width: 1280px;
     padding-top: 0;
     padding-bottom: 0;
-    font-family: "Inter", "Roboto", sans-serif;
-    letter-spacing: 0.2px;
     color: #2b2b2b;
+    letter-spacing: 0.08px;
 }
 
 .whitespace {
@@ -31,6 +30,7 @@ html, body {
 
 /*--------------- navigation start--------------- */
 header{
+    font-family: 'Poppins', sans-serif;
     z-index: 1;
     width: 100%;
     margin: 0 auto;
@@ -40,7 +40,7 @@ nav.nav-header {
     justify-content: flex-start;
     align-items: baseline;
     padding: 20px 5%;
-    padding-top: 10px;
+    padding-top: 30px;
     height: 85px;
 }
 nav.nav-header:hover{
@@ -50,37 +50,32 @@ nav.nav-header:hover{
     margin-right: auto;
 }
 .logo a{
-    font-family: "roboto";
     text-decoration: none;
     color: #2b2b2b;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .logo a:hover,
 .menu a:hover,
 #rrss a:hover{
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
 }
 .menu li, .menu a{
     color: #2b2b2b;
-    font-family: "roboto";
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     list-style-type: none;
 }
 #rrss li{
     display: inline-flex;
     color: #2b2b2b;
-    font-family: "roboto";
     font-size: 18px;
-    font-weight: 300;
 }
 #rrss a{
-    font-weight: 600;
+    font-weight: 500;
     color: #2b2b2b;
     text-decoration: none;
     list-style-type: none;
@@ -97,12 +92,11 @@ nav.nav-header:hover{
 }
 .info, .connect{
     min-width: 130px;
-    max-width: 250px;
+    max-width: 270px;
 }
 .info p{
     font-size: 18px;
     letter-spacing: 0.5px;
-    font-family: "roboto";
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -110,8 +104,7 @@ nav.nav-header:hover{
 .connect{
     font-size: 15px;
     letter-spacing: 0.5px;
-    font-family: "roboto";
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -122,14 +115,15 @@ nav.nav-header:hover{
     padding: 5%;
     padding-top: 20px;
     margin: 0;
+    margin-top: 20px;
     padding-bottom: 0;
 }
 span.menuspan{
-    font-family: "Inter", "Roboto";
     font-weight: 400;
-    font-size: 16px;
-    margin-right: 8px;
+    font-size: 18px;
+    margin-right: 7px;
     margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*--------------- navigation end--------------- */
@@ -143,6 +137,7 @@ span.menuspan{
     align-items: center;
     margin-left: 200px;
     margin-right: 300px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .iz-aboutme{
@@ -159,7 +154,6 @@ span.menuspan{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -174,6 +168,7 @@ span.menuspan{
 
 /*-------------------vertical dr start---------------*/
 #bloque-tools{
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 350px;
@@ -198,7 +193,6 @@ span.menuspan{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -213,6 +207,7 @@ span.menuspan{
 /*-------------------horizontal dr start---------------*/
 
 #hz-dr{ 
+    font-family: 'Poppins', sans-serif;
     display: flex;
     margin-top: 150px;
     justify-content: space-between;
@@ -223,11 +218,9 @@ span.menuspan{
     border-top: 3px solid #2b2b2b;
     width: 100%;
     margin-top: -8px;
-
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 30px;
     font-weight: 700;
@@ -245,10 +238,10 @@ span.menuspan{
     margin-top: 60px;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 30px;
     font-weight: 700;
@@ -266,19 +259,18 @@ span.menuspan{
     margin-top: 70px;
     margin-bottom: -5px;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -294,6 +286,7 @@ span.menuspan{
 
 /*---------------filtros project page start---------------*/
 #filtro2{
+    font-family: 'Poppins', sans-serif;
     display: block;
     justify-content: center;
     text-align: center;
@@ -305,16 +298,14 @@ span.menuspan{
 
 .filtros-selector2 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 50px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 2px #2b2b2b;
     color: transparent;
@@ -329,26 +320,23 @@ span.menuspan{
 
 /*---------------filtros trabajos page start---------------*/
 #filtro3{
+    font-family: 'Poppins', sans-serif;
     display: block;
     justify-content: center;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 35px;
-
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -361,15 +349,16 @@ span.menuspan{
 /*---------------filtros trabajos page end---------------*/
 
 /*---------------page home start---------------*/
-#home2{
+/*#home2{
     height: 179px;
 }
 
 #home1{
     height: 312px;
-}
+}*/
 
 #presentacion{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -393,7 +382,6 @@ p.texto-presentacion2{
 span.h1{
     margin-top: 100px;
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -420,7 +408,6 @@ span.h1:hover::before{
 /*---------------page ux/ui start---------------*/
 
 .ux-ui-skills{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     padding: 2%;
@@ -431,144 +418,84 @@ span.h1:hover::before{
     padding-right: 25%;
 }
 
+
 #projects-ux-ui{
-    display: block;
-    height: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 10px;
+    margin: auto;
 }
 
-video{
-    width:550px;
-    height: auto;
-}
-
-.cuadrado-ux-ui1{
-    width: 550px;
-    height: 350px;
-    margin-left: 640px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 60% 60%;
-    background-size: cover;
+.contenedor-ux-ui{
+    width: 100%;
+    height: 100%;
     position: relative;
-    width: 450px;
-    height: 500px;
-    color: #fff;
-    margin-left: 120px;
-    top: -160px;
 }
 
-.cuadrado-ux-ui3{
-    width: 500px;
-    height: 300px;
-    color: #fff;
-    margin-left: 640px;
-    margin-top: -230px;
+.contenedor-ux-ui .cuadrado{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 10% 50%;
-    background-size: 100%;
-    width: 500px;
-    height: 300px;
-    margin-left: 100px;
-    margin-top: -270px;
+.contenedor-ux-ui .cuadrado img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%; 50%;
 }
 
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 10% 50%;
-    background-size: 100%;
-    width: 580px;
-    height: 380px;
-    margin-left: 210px;
-    margin-top: 50px;
+.contenedor-ux-ui .cuadrado video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%; 50%;
 }
+
 
 /*---------------page ux/ui end---------------*/
 
 /*---------------page graphic start---------------*/
 
+.container{
+    width: 100%;
+    height: 100vh;
+}
 
 #projects-graphic{
-    height: 3000px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 60% 60%;
-    background-size: cover;
-    width: 600px;
-    height: 400px;
-    color: #fff;
-    margin-left: 90px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    color: #fff;
-    margin-left: 770px;
-    margin-top: -140px;
-}
-.cuadrado-graphic3{
-    position: relative;
-    width: 560px;
-    height: 350px;
-    color: #fff;
-    margin-left: 100px;
-    margin-top: -40px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 10% 60%;
-    background-size: 130%;
-    position: relative;
-    width: 500px;
-    height: 450px;
-    color: #fff;
-    margin-left: 690px;
-    margin-top: 0px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    color: #fff;
-    margin-left: 130px;
-    margin-top: 0px;
-}
-.cuadrado-graphic6{
-    position: relative;
-    width: 500px;
-    height: 350px;
-    color: #fff;
-    margin-left: 680px;
-    margin-top: 40px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 60% 0%;
-    background-size: 100%;
-    position: relative;
-    width: 400px;
-    height: 650px;
-    color: #fff;
-    margin-left: 190px;
-    margin-top: -150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 10px;
+    margin: auto;
 }
 
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 60% 0%;
-    background-size: 100%;
+.contenedor-grafico{
+    width: 100%;
+    height: 100%;
     position: relative;
-    width: 570px;
-    height: 420px;
-    margin-left: 660px;
-    margin-top: -200px;
 }
 
+.contenedor-grafico .cuadrado{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+.contenedor-grafico .cuadrado img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%; 50%;
+}
+
+.contenedor-grafico .cuadrado video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%; 50%;
+}
 
 /*---------------page graphic end---------------*/
 
@@ -576,84 +503,43 @@ video{
 
 
 #projects-photography{
-    display: block;
-    height: 2230px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 600px;
+    grid-gap: 10px;
+    margin: auto;
 }
 
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    width: 550px;
-    height: 350px;
-    color: #fff;
-    margin-left: 90px;
-    margin-top: -92px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 60% 60%;
-    background-size: cover;
+.contenedor-photography{
+    width: 100%;
+    height: 100%;
     position: relative;
-    width: 450px;
-    height: 550px;
-    color: #fff;
-    margin-left: 720px;
-    top: -150px;
 }
 
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 550px;
-    color: #fff;
-    margin-left: 140px;
-    top: -280px;
+.contenedor-photography .cuadrado{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 500px;
-    height: 350px;
-    color: #fff;
-    margin-left: 680px;
-    top: -360px;
+.contenedor-photography .cuadrado img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%; 50%;
 }
 
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 550px;
-    color: #fff;
-    margin-left: 180px;
-    top: -480px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 350px;
-    height: 500px;
-    color: #fff;
-    margin-left: 690px;
-    top: -620px;
-}
 
 /*---------------page photography end---------------*/
 
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     width: 590px;
     margin-left: 200px;
+    
 
 }
 
@@ -690,7 +576,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -780,15 +665,16 @@ span.selfie:hover + img{
     width: 100%; 
 }
 
-.foto-fondo{
+/*.foto-fondo{
     display: none;
     margin-left: 470px;
     margin-top: -120px;
     width: 800px;
     height: auto;
-}
+}*/
 
 table{
+    
     display: table;
     width: 60%;
     margin-top: -20px;
@@ -808,7 +694,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 600;
     text-align: left;
@@ -822,7 +707,6 @@ td{
     font-size: 15px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding-bottom: 0;
 }
@@ -849,6 +733,7 @@ td{
 }
 
 #texto-pagina{
+    font-family: 'Poppins', sans-serif;
     width: 700px;
     margin-left: 300px;
 }
@@ -864,7 +749,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -879,7 +763,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -893,11 +776,25 @@ p.fechas{
 
 }
 
+.bloque-texto .link-texto{
+    text-decoration: none;
+    color: #9CBC9D;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bloque-texto .link-texto:hover{
+    text-decoration: none;
+    -webkit-text-stroke: 1px #FF7563;
+    color: transparent;
+}
+
 /*---------------page about me end---------------*/
 
 
 /*---------------footer start---------------*/
 #footer{
+    font-family: 'Poppins', sans-serif;
     position: static;
     display: flex;
     align-items: center;
@@ -907,9 +804,8 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     width: 100%;
     text-align: center;
     
