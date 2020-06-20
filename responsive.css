@@ -39,7 +39,7 @@ nav.nav-header {
 
 .connect{
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 #connectme{
@@ -96,14 +96,14 @@ nav.nav-header {
 
 .connect{
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 #connectme{
     width: auto;
     height: 50px;
     padding-top: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
 }    
     
 span.menuspan{
@@ -153,14 +153,14 @@ nav.nav-header {
 
 .connect{
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 #connectme{
     width: auto;
     height: 50px;
     padding-top: 0px;
-    margin-top: -10px;
+    margin-top: 10px;
 }    
     
 span.menuspan{
@@ -217,7 +217,7 @@ nav.nav-header {
     width: auto;
     height: 50px;
     padding-top: 0px;
-    margin-top: -10px;
+    margin-top: 0px;
 }    
     
 span.menuspan{
@@ -302,7 +302,17 @@ span.menuspan{
 @media (max-width: 1024px){
 
 /*-------------------vertical iz start---------------*/
-
+    
+#projects-ux-ui,
+#projects-graphic,
+#projects-photography{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 350px;        
+}    
+    
+   
+    
 #bloque-skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -326,7 +336,6 @@ span.menuspan{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -365,7 +374,6 @@ span.menuspan{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -394,7 +402,6 @@ span.menuspan{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 30px;
     font-weight: 700;
@@ -415,7 +422,6 @@ span.menuspan{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 30px;
     font-weight: 700;
@@ -437,14 +443,12 @@ span.menuspan{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -473,14 +477,12 @@ span.menuspan{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 50px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 2px #2b2b2b;
     color: transparent;
@@ -498,24 +500,20 @@ span.menuspan{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 35px;
-    font-size: 20px;
+    margin-top: 20px;    
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 2px #2b2b2b;
     color: transparent;
@@ -528,13 +526,13 @@ span.menuspan{
 /*---------------filtros trabajos page end---------------*/
 
 /*---------------page home start---------------*/
-#home2{
-    height: 179px;
+/*#home2{
+    height: 223px;
 }
 
 #home1{
-    height: 312px;
-}
+    height: 410px;
+}*/
 
 #presentacion{
     display: flex;
@@ -560,7 +558,6 @@ p.texto-presentacion2{
 span.h1{
     margin-top: 100px;
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -584,228 +581,9 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 18px;
-    padding: 2%;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 20%;
-    padding-right: 25%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1550px;
-}
-
-.cuadrado-ux-ui1{
-    width: 550px;
-    height: 350px;
-    margin-left: 300px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 450px;
-    height: 500px;
-    margin-left: 100px;
-    top: 0px;
-}
-
-.cuadrado-ux-ui3{
-    width: 500px;
-    height: 300px;
-    color: #fff;
-    margin-left: 340px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui4{
-   background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 500px;
-    height: 300px;
-    margin-left: 100px;
-    margin-top: -270px;
-}
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 10% 50%;
-    background-size: 100%;
-    width: 580px;
-    height: 380px;
-    margin-left: 210px;
-    margin-top: 50px;
-}
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-    
-#projects-graphic{
-    height: 3730px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 60% 60%;
-    background-size: cover;
-    width: 500px;
-    height: 400px;
-    color: #fff;
-    margin-left: 90px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    margin-left: 470px;
-    margin-top: 40px;
-}
-.cuadrado-graphic3{
-    position: relative;
-    width: 560px;
-    height: 310px;
-    color: #fff;
-    margin-left: 100px;
-    margin-top: 70px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 10% 60%;
-    background-size: 130%;
-    position: relative;
-    width: 500px;
-    height: 400px;
-    color: #fff;
-    margin-left: 390px;
-    margin-top: 80px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    color: #fff;
-    margin-left: 130px;
-    margin-top: 90px;
-}
-.cuadrado-graphic6{
-    position: relative;
-    width: 500px;
-    height: 310px;
-    color: #fff;
-    margin-left: 380px;
-    margin-top: 65px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 500px;
-    color: #fff;
-    margin-left: 210px;
-    margin-top: 60px;
-}
-    
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 60% 0%;
-    background-size: 100%;
-    width: 570px;
-    height: 370px;
-    margin-left: 360px;
-    margin-top: 80px;
-}
-
-
-
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2100px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    width: 500px;
-    height: 300px;
-    margin-left: 70px;
-    margin-top: -92px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 350px;
-    height: 500px;
-    color: #fff;
-    margin-left: 610px;
-    top: -150px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 550px;
-    margin-left: 140px;
-    top: -290px;
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 300px;
-    color: #fff;
-    margin-left: 580px;
-    top: -360px;
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 400px;
-    height: 550px;
-    margin-left: 80px;
-    top: -480px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    position: relative;
-    width: 350px;
-    height: 500px;
-    margin-left: 600px;
-    top: -620px;
-}
-
-/*---------------page photography end---------------*/
 
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 590px;
@@ -847,7 +625,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -965,7 +742,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 600;
     text-align: left;
@@ -979,7 +755,6 @@ td{
     font-size: 15px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding-bottom: 0;
 }
@@ -1021,7 +796,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1036,7 +810,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -1064,7 +837,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -1088,6 +860,25 @@ p.fechas{
 
 /*-------------------vertical iz start---------------*/
 
+    
+#projects-ux-ui{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;        
+}
+    
+#projects-graphic{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;        
+}
+    
+#projects-photography{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;        
+}      
+    
 #bloque-skills{
     display: block;
     height: 280px;
@@ -1113,7 +904,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -1152,7 +942,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -1181,7 +970,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -1203,7 +991,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -1226,14 +1013,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -1261,14 +1046,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 40px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 2px #2b2b2b;
     color: transparent;
@@ -1286,24 +1069,22 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 50px;
     margin-right: 15px;
+    margin-bottom: -30px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 25px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -1317,13 +1098,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
-    height: 242px;
+/*#home2{
+    height: 223px;
 }
 
 #home1{
     height: 410px;
-}
+}*/
 
 #presentacion{
     display: flex;
@@ -1349,7 +1130,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -1376,211 +1156,8 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 16px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1400px;
-}
-
-.cuadrado-ux-ui1{
-    width: 500px;
-    height: 300px;
-    margin-left: 170px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 90px;
-    margin-top: 0px;
-}
-
-.cuadrado-ux-ui3{
-    width: 500px;
-    height: 300px;
-    margin-left: 200px;
-    margin-top: 35px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 500px;
-    height: 300px;
-    margin-left: 80px;
-    margin-top: -340px;
-}
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 10% 10%;
-    background-size: 100%;
-    width: 450px;
-    height: 290px;
-    margin-left: 180px;
-    margin-top: 50px;
-}
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-video{
-    width:450px;
-    height: auto;
-}
-
-#projects-graphic{
-    height: 2930px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 500px;
-    height: 300px;
-    margin-left: 200px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
-.cuadrado-graphic3{
-    width: 550px;
-    height: 255px;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 350px;
-    height: 250px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 350px;
-    height: 360px;
-    margin-left: 300px;
-    margin-top: 50px;
-}
-.cuadrado-graphic6{
- 
-    width: 350px;
-    height: 255px;
-    margin-left: 80px;
-    margin-top: 50px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 400px;
-    height: 500px;
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 60% 60%;
-    background-size: 100%;
-    position: relative;
-    width: 470px;
-    height: 300px;
-    color: #fff;
-    margin-left: 210px;
-    margin-top: 50px;
-}
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2280px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 70px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 400px;
-    margin-top: 80px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 70px;
-    margin-top: 68px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 500px;
-    height: 300px;
-    margin-left: 200px;
-    margin-top: 112px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 90px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    margin-left: 300px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
-
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -1626,7 +1203,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 35px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -1742,7 +1318,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -1756,7 +1331,6 @@ td{
     font-size: 12px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -1811,7 +1385,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1826,7 +1399,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -1854,7 +1426,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -1902,7 +1473,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -1941,7 +1511,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -1970,7 +1539,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -1992,7 +1560,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -2015,14 +1582,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -2050,14 +1615,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 40px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 2px #2b2b2b;
     color: transparent;
@@ -2075,24 +1638,22 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: -10;
+    margin-top: 40px;
     margin-right: 15px;
+    margin-bottom: -50px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 25px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -2106,13 +1667,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
-    height: 243px;
+/*#home2{
+    height: 223px;
 }
 
 #home1{
     height: 410px;
-}
+}*/
 
 #presentacion{
     display: flex;
@@ -2138,7 +1699,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -2165,211 +1725,9 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 16px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1500px;
-}
-
-.cuadrado-ux-ui1{
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-
-.cuadrado-ux-ui3{
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -245px;
-}
-    
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-video{
-    width: 100%;
-}
-
-#projects-graphic{
-    height: 3550px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 340px;
-    margin-left: 0px;
-    margin-top: 45px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 500px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -85px;
-    margin-bottom: -100px;
-}
-
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 4060px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 158px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 112px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
 
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -2415,7 +1773,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 35px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -2531,7 +1888,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -2545,7 +1901,6 @@ td{
     font-size: 12px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -2600,7 +1955,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2615,7 +1969,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -2643,7 +1996,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -2689,7 +2041,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -2728,7 +2079,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -2757,7 +2107,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -2779,7 +2128,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -2802,14 +2150,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -2837,14 +2183,13 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 40px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
+
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -2862,25 +2207,21 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 60px;
     margin-right: 15px;
-
+    margin-bottom: -50px;
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 25px;
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -2894,13 +2235,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
+/*#home2{
     height: 223px;
 }
 
 #home1{
     height: 410px;
-}
+}*/
 
 #presentacion{
     display: flex;
@@ -2926,7 +2267,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -2953,210 +2293,8 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 14px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1280px;
-}
-
-.cuadrado-ux-ui1{
-    background: url(img/tmb_video.m4v) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui3{
-    width: 100%;
-    height: 250px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -140px;
-}
-
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-    
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-
-#projects-graphic{
-    height: 3350px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 280px;
-    margin-left: 0px;
-    margin-bottom: -10px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-    width: 100%;
-    height: 290px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -90px;
-    margin-bottom: -100px;
-}
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2460px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 100px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
-
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -3199,7 +2337,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 30px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -3315,7 +2452,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -3329,7 +2465,6 @@ td{
     font-size: 12px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -3382,7 +2517,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -3397,7 +2531,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -3425,7 +2558,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -3472,7 +2604,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -3511,7 +2642,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -3540,7 +2670,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -3562,7 +2691,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -3585,14 +2713,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -3620,14 +2746,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 40px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -3645,25 +2769,22 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 60px;
     margin-right: 15px;
+    margin-bottom: -50px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 25px;
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -3677,13 +2798,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
+/*#home2{
     height: 223px;
 }
 
 #home1{
     height: 410px;
-}
+}*/
 
 #presentacion{
     display: flex;
@@ -3709,7 +2830,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -3736,212 +2856,8 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 14px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1280px;
-}
-
-.cuadrado-ux-ui1{
-    background: url(img/tmb_video.m4v) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 250px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 60px;
-}
-
-.cuadrado-ux-ui3{
-    width: 100%;
-    height: 250px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -190px;
-}
-
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-    
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-
-#projects-graphic{
-    height: 3300px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 280px;
-    margin-left: 0px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    margin-left: 0px;
-    margin-top: 40px;
-
-
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 35px;
-
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 120px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-    width: 100%;
-    height: 290px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 700px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -100px;
-    margin-bottom: -100px;
-}
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2460px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 100px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
-
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -3984,7 +2900,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 30px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -4100,7 +3015,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -4114,7 +3028,6 @@ td{
     font-size: 12px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -4167,7 +3080,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -4182,7 +3094,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -4210,7 +3121,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -4259,7 +3169,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -4298,7 +3207,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -4327,7 +3235,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -4349,7 +3256,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -4372,14 +3278,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -4407,14 +3311,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 35px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -4432,25 +3334,21 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 40px;
     margin-right: 15px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 20px;
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -4464,13 +3362,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
+/*#home2{
     height: 223px;
 }
 
 #home1{
     height: 410px;
-}
+}*/
 
 #presentacion{
     display: flex;
@@ -4496,7 +3394,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -4523,209 +3420,9 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 14px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1160px;
-}
-
-.cuadrado-ux-ui1{
-    width: 100%;
-    height: 240px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 430px;
-    margin-left: 0px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-.cuadrado-ux-ui3{
-    width: 100%;
-    height: 260px;
-    margin-left: 0px;
-    margin-top: 0px;
-    
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -125px;
-}
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 20px;
-}    
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-
-#projects-graphic{
-    height: 2820px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 240px;
-    margin-left: 0px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 360px;
-    margin-left: 0px;
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 240px;
-    margin-left: 0px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 250px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 340px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-    background: url(img/DHUB.mp4) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 240px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -125px;
-    margin-bottom: -120px;
-}
-
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2360px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 158px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 112px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
 
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -4768,7 +3465,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 30px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -4892,7 +3588,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -4906,7 +3601,6 @@ td{
     font-size: 10px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -4959,7 +3653,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -4974,7 +3667,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -5003,7 +3695,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -5052,7 +3743,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -5091,7 +3781,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -5120,7 +3809,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -5142,7 +3830,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -5165,14 +3852,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -5200,14 +3885,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 35px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -5225,25 +3908,21 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 40px;
     margin-right: 15px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -5257,14 +3936,13 @@ p.fechas{
     
     
 /*---------------page home start---------------*/
-#home2{
+/*#home2{
     height: 223px;
 }
 
 #home1{
     height: 410px;
-}
-
+}*/
 #presentacion{
     display: flex;
     justify-content: center;
@@ -5289,7 +3967,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -5316,208 +3993,9 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 14px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1160px;
-}
-
-.cuadrado-ux-ui1{
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-
-.cuadrado-ux-ui3{
-
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -245px;
-}
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -25px;
-}    
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-
-#projects-graphic{
-    height: 2330px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 180px;
-    margin-left: 0px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 210px;
-    margin-left: 0px;
-    margin-top: 65px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-    background: url(img/DHUB.mp4) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 210px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -145px;
-    margin-bottom: -150px;
-}
-
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2360px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 158px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 112px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
 
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -5560,7 +4038,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 30px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -5684,7 +4161,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -5698,7 +4174,6 @@ td{
     font-size: 10px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -5751,7 +4226,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -5766,7 +4240,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -5795,7 +4268,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
@@ -5840,7 +4312,6 @@ p.fechas{
 }
 
 .titulos-iz-aboutme{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -5879,7 +4350,6 @@ p.fechas{
 }
 
 .titulos-dr{
-    font-family: "Inter", "Roboto";
     font-size: 30px;
     font-weight: 700; 
     transform: rotate(90deg);
@@ -5908,7 +4378,6 @@ p.fechas{
 }
 
 .titulos-hz-dr{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -5930,7 +4399,6 @@ p.fechas{
 }
 
 .titulos-hz-iz{
-    font-family: "Inter", "Roboto";
     left: 0;
     font-size: 18px;
     font-weight: 700;
@@ -5953,14 +4421,12 @@ p.fechas{
 .filtros-selector a{
     color: #2b2b2b;
     font-weight: 700;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -5988,14 +4454,12 @@ p.fechas{
     color: #2b2b2b;
     font-weight: 900;
     font-size: 35px;
-    font-family: "Roboto";
     text-decoration: none;
     letter-spacing: 0.6px;
 }
 
 .filtros-selector2 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1.5px #2b2b2b;
     color: transparent;
@@ -6013,25 +4477,22 @@ p.fechas{
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     margin-right: 15px;
 
 }
 
 .filtros-selector3 a{
     color: #2b2b2b;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 16px;
-    font-family: "Roboto";
     text-decoration: none;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.3px;
 }
 
 .filtros-selector3 a:hover{
     text-decoration: none;
-    font-family: "roboto";
     text-decoration: none;
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
@@ -6039,19 +4500,19 @@ p.fechas{
 
 #filtro3 li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 9px;
 }    
 /*---------------filtros trabajos page end---------------*/
     
     
 /*---------------page home start---------------*/
-#home2{
-    height: 243px;
+/*#home2{
+    height: 223px;
 }
 
 #home1{
-    height: 400px;
-}
+    height: 410px;
+}*/
 
 #presentacion{
     display: flex;
@@ -6077,7 +4538,6 @@ p.texto-presentacion2{
 
 span.h1{
     font-size: 40px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     text-align: center;
@@ -6104,209 +4564,8 @@ span.h1:hover::before{
 
 /*---------------page home end---------------*/
 
-/*---------------page ux/ui start---------------*/
-
-.ux-ui-skills{
-    font-family: "Inter", "Roboto";
-    font-weight: 300;
-    font-size: 14px;
-    padding: 2%;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#projects-ux-ui{
-    display: block;
-    height: 1080px;
-}
-
-.cuadrado-ux-ui1{
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-}
-
-.cuadrado-ux-ui2{
-    background: url(img/ux.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 10px;
-}
-
-.cuadrado-ux-ui3{
-
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 30px;
-}
-
-.cuadrado-ux-ui4{
-    background: url(img/web0.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -250px;
-}
-    
-.cuadrado-ux-ui5{
-    background: url(img/Screen.pdf) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: -60px;
-    margin-bottom: -40px;
-}
-
-/*---------------page ux/ui end---------------*/
-
-/*---------------page graphic start---------------*/
-
-
-#projects-graphic{
-    height: 2230px;
-
-}
-.cuadrado-graphic1{
-    background: url(img/zqkl.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-}
-.cuadrado-graphic2{
-    background: url(img/JISOO1.JPG) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-}
-.cuadrado-graphic3{
-    width: 100%;
-    height: 180px;
-    margin-left: 0px;
-}
-.cuadrado-graphic4{
-    background: url(img/caja-baja.jpg) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 210px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic5{
-    background: url(img/foto2.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-.cuadrado-graphic6{
-
-    width: 100%;
-    height: 180px;
-    margin-left: 0px;
-    margin-top: 35px;
-    
-}
-.cuadrado-graphic7{
-    background: url(img/JISOO.JPG) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 35px;
-}
-
-.cuadrado-graphic8{
-    background: url(img/logo_1.png) no-repeat 50% 50%;
-    background-size: 100%;
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: -165px;
-    margin-bottom: -170px;
-}
-
-
-/*---------------page graphic end---------------*/
-
-/*---------------page photography start---------------*/
-
-
-#projects-photography{
-    display: block;
-    height: 2360px;
-}
-
-.cuadrado-photography1{
-    background: url(img/05_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-}
-
-.cuadrado-photography2{
-    background: url(img/07_1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 180px;
-}
-
-.cuadrado-photography3{
-    background: url(img/6.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 158px;
-
-}
-
-.cuadrado-photography4{
-    background: url(img/03.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    margin-left: 0px;
-    margin-top: 112px;
-
-}
-
-.cuadrado-photography5{
-    background: url(img/IMG_5359.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 150px;
-}
-
-.cuadrado-photography6{
-    background: url(img/IMG_5397.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 170px;
-}
-
-/*---------------page photography end---------------*/
-
 /*---------------page about me start---------------*/
 .mystory{
-    font-family: "Inter", "Roboto";
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -6349,7 +4608,6 @@ span.selfie:hover + img{
 .text5,
 .text6{
     font-size: 30px;
-    font-family: "roboto";
     font-weight: bold;
     color: #2b2b2b;
     -webkit-text-stroke: 1px #2b2b2b;
@@ -6473,7 +4731,6 @@ th, td {
         }
 
 th{
-    font-family: "Inter", "Roboto";
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -6487,7 +4744,6 @@ td{
     font-size: 10px;
     text-transform: lowercase;
     font-weight: 300;
-    font-family: "Inter", "Roboto";
     text-align: center;
     padding: 2px;
     padding-bottom: 0;
@@ -6540,7 +4796,6 @@ td{
 }
 
 .bloque-texto h5{
-    font-family: "Inter", "Roboto";
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -6555,7 +4810,6 @@ p.texto-sencillo{
     margin: 0;
     letter-spacing: 0,5px;
     font-weight: 400;
-    font-family: "Inter", "Roboto";
     color: #2b2b2b;
     margin-bottom: 2px;
 }
@@ -6584,7 +4838,6 @@ p.fechas{
 }
 
 #footer .footer-bottom{
-    font-family: "Inter", "Roboto";
     font-size: 12px;
     font-weight: 300;
     width: 100%;
