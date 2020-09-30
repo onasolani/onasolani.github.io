@@ -581,6 +581,7 @@ span.selfie:hover + img{
     -webkit-text-stroke: 1px #2b2b2b;
     color: transparent;
     line-height: 45px;
+    font-family: 'Poppins', sans-serif;
 
 
 }
