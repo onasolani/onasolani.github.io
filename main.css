@@ -664,6 +664,7 @@ span.selfie:hover + img{
 .text5:hover::before,
 .text6:hover::before{
     width: 100%; 
+    font-family: 'Poppins', sans-serif;
 }
 
 /*.foto-fondo{
