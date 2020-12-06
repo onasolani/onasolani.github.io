@@ -650,24 +650,31 @@ ul{
 }
 
 /*--- hobbies ---*/
+.wrapper-hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
 .hero-hobbies-block{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
     width: 100%;
     margin: 0 auto 50px auto;
 }
 
 .video-block{
-    width: 32%;
+    width: 33%;
+    height: 290px;
+    overflow: hidden;
 }
 
-.hero-hobbies-block .video-block video{
+.video-block video{
     width: 100%;
     height: 290px;
     object-fit: cover;
-    overflow: hidden;
+    margin: 10px;
 }
 
 
@@ -1051,6 +1058,12 @@ ul{
     .arrow img {
         margin-right: 0;
     }
+    .video-block video{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        margin: 10px;
+    }
 
 }
 
@@ -1071,6 +1084,34 @@ ul{
     .about{
         width: 100%;
     }     
+    .video-block video{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        margin: 10px;
+    }
+}
+
+@media(max-width: 888px){
+    .hero-hobbies-block{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto 50px auto;
+    }
+    
+    .video-block{
+        width: 50%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .video-block video{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+    }
 }
 
 @media (max-width: 812px) and (min-width: 375px) and (orientation: landscape){
@@ -1108,6 +1149,7 @@ ul{
     .arrow-btn img{
         width: 150px;
     }
+
 }
 
 @media(max-width: 650px){
@@ -1125,6 +1167,71 @@ ul{
         width: 150px;
         display: flex;
         margin: 10px auto 0 auto;
+    }
+}
+
+@media(max-width: 568px){
+    .hero-hobbies-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 50px auto;
+    }
+    
+    .video-block{
+        width: 45%;
+        overflow: hidden;
+    }
+
+    .video-block video{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin: 10px;
+    }
+}
+
+@media(max-width: 512px){
+    .hero-hobbies-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto 0px auto;
+    }
+    
+    .video-block{
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .video-block video{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 468px){
+    .hero-hobbies-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 0px auto;
+    }
+    
+    .video-block{
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .video-block video{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
     }
 }
 
