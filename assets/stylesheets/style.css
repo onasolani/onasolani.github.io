@@ -26,7 +26,7 @@ button,
 input{
     font-size: 18px;
     text-decoration: none;
-    font-family: "Poppins", Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     letter-spacing: 0.2px;
     line-height: 1.6rem;
     color: #222;
@@ -336,7 +336,7 @@ ul{
 }
 
 .text-about .letter {
-    font-family: "Graphik", "Poppins", sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 700;
     display: inline-block;
     line-height: 1em;
