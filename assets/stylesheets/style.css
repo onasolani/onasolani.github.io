@@ -182,11 +182,10 @@ input{
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   cursor: none;
 }
 
 /*--------------- cursor ---------------*/
-.cursor {
+/* .cursor {
    position: absolute;
    background:  #4bedc2;
    width: 15px;
@@ -219,24 +218,7 @@ input{
 
 .cursor.active::before {
    opacity: 1;
-}
-
-@media (max-width:1023px){
-   html,
-   body,
-   input{
-      cursor: default;
-   }
-   a,
-   button{
-      cursor: pointer;
-   }
-   
-   .cursor{
-      display: none;
-   }
-
-}
+} */
 
 /*--------------- btn ---------------*/
 
