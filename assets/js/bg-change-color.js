@@ -12,6 +12,5 @@ function onScroll() {
       const rect = el.getBoundingClientRect();
       return {el, rect};
   }).find(section => section.rect.bottom >= (window.innerHeight * 0.5))
-  const el = section;
   document.body.style.background = section.el.getAttribute('data-bg');
 }
