@@ -816,6 +816,7 @@ footer section article h4{
    background-color: rgba(117, 212, 181, 0.8);
    color: #222;
    border: 1px solid #79cfbd;
+   height: 55px;
 }
 
 .project-btn .btn-see-details:hover{
