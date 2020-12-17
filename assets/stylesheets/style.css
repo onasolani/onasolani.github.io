@@ -1016,6 +1016,7 @@ footer section article h4{
 
 .hero-project-details ul li{
    margin: 15px 0;
+   display: flex;
 }
 
 
