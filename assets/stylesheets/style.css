@@ -166,22 +166,24 @@ html, body{
    scroll-behavior: smooth;
    height: 100vh;
    transition: background 0.5s ease-in-out;
-}
-
-html,
-body,
-a,
-button,
-input{
-   font-size: 18px;
-   text-decoration: none;
-   letter-spacing: 0.2px;
-   word-spacing: 0.2px;
-   color: #222;
    font-family: "Graphik", "Segoe UI", "Roboto","Helvetica","Helvetica Neue","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+button,
+input{
+   font-size: 18px;
+   letter-spacing: 0.2px;
+   word-spacing: 0.2px;
+   line-height: 30px;
+}
+
+a{
+   text-decoration: none;
+   color: #222;
 }
 
 /*--------------- cursor ---------------*/
@@ -432,6 +434,11 @@ input{
    nav #menu {
          display: none;
    }
+
+   #resize .close-btn {
+      right: 40px;
+      margin-top: 30px;
+   }
 }
 
 @media(min-width: 769px) {
@@ -439,15 +446,10 @@ input{
          visibility: hidden !important;
    }
 }
-@media(max-width: 768px){
-   #resize .close-btn {
-      right: 40px;
-      margin-top: 10px;
-   }
-}
 @media(max-width: 425px){
    #resize .close-btn {
       right: 25px;
+      margin-top: 30px;
    }
 }
 @media(max-width: 280px){
@@ -604,7 +606,7 @@ footer section article h4{
 /*--- project section ---*/
 .projects-home{
   padding: 5% 0;
-  /* height: 100%; */
+  height: 70vh;
 }
 
 .projects-home article h2{
@@ -620,29 +622,26 @@ footer section article h4{
 }
 
 .projects-home .video-block{
-   width: 33%;
-   /* height: 290px; */
+   width: 25%;
    overflow: hidden;
 }
 
 .video-block video, .video2 video{
    width: 100%;
-   /* height: 290; */
    object-fit: cover;
 }
 
 .video1{
    position: absolute;
-   right: 5%;
-   top: 115%;
+   right: 15%;
+   top: 95%;
 }
 
 .video2{
    position: absolute;
-   top: 160%;
-   left: 40%;
-   width: 25%;
-   /* height: 290px; */
+   top: 125%;
+   left: 45%;
+   width: 20%;
    overflow: hidden;
    box-shadow: 0 0 1px 1px #222;
 }
@@ -654,6 +653,7 @@ footer section article h4{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-bottom: 130px;
 }
 
 .about-me-home>div{
@@ -722,14 +722,6 @@ footer section article h4{
    margin: 0 25px;
 }
 
-.section-clients figure span:first-child{
-   margin-left: 0;
-}
-
-.section-clients figure span:last-child{
-   margin-right: 0;
-}
-
 .section-clients figure span img{
    width: 100%;
    height: 100%;
@@ -775,11 +767,12 @@ footer section article h4{
    height: auto;
    display: flex;
    flex-direction: column;
-   margin: 10px;
+   margin: 10px 10px 50px 10px;
 }
 
 .projects-block .project-card article{
-   min-height: 75px;
+   height: 100%;
+   margin-top: 20px;
 }
 
 .projects-block .project-card article h2{
@@ -820,7 +813,7 @@ footer section article h4{
    position: absolute;
    text-align: center;
    z-index: 9997;
-   background-color: rgba(117, 212, 181, 0.5);
+   background-color: rgba(117, 212, 181, 0.8);
    color: #222;
    border: 1px solid #79cfbd;
 }
@@ -917,9 +910,10 @@ footer section article h4{
 .hero-project-details .hero-project-title span{
    display: flex;
    align-items: center;
-   font-size: 18px;
+   font-size: 24px;
    color: #4ec5ab;
    text-decoration: underline;
+   margin-bottom: 20px;
 }
 
 .hero-project-details .hero-project-title span ion-icon{
@@ -1098,14 +1092,14 @@ font-size: xsmall;}
 
 .hobbies-block .photo-block{
    position: relative;
-   height: 100vh;
+   height: 190vh;
 }
 
 .title-hobbies{
    font-weight: 500;
    font-family: "Mars Extended";
    margin-top: 60px;
-   margin-bottom: 200px;
+   margin-bottom: 60px;
    color: rgb(236, 236, 236);
 }
 
@@ -1140,7 +1134,7 @@ font-size: xsmall;}
 .hobbies-block .photo-block .card-3{
    position: absolute;
    left: 25%;
-   top: 300px;
+   top: 350px;
 }
 
 .hobbies-block .photo-block .card-4{
@@ -1185,7 +1179,8 @@ font-size: xsmall;}
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 75vh;
+  height: 100%;
+  margin: 100px 0;
 }
 
 .hero-resume h1{
@@ -1194,7 +1189,7 @@ font-size: xsmall;}
   font-weight: 700;
   color: #222;
   width: 70vw;
-  margin-top: 40px;
+  margin: 50px 0;
 }
 
 .resume-cv{
@@ -1222,8 +1217,6 @@ font-size: xsmall;}
 .timeline>div .content span, .timeline article h2{
    font-weight: 600;
    font-size: 40px;
-   -webkit-text-stroke: 2px #222;
-   color: transparent;
    margin-bottom: 20px;
 }
 
@@ -1240,7 +1233,7 @@ font-size: xsmall;}
    position:absolute;
    left:50%;
    width:1px;
-   height:98%;
+   height: 98%;
    background:#dcdcdc;
 }
 
@@ -1321,9 +1314,9 @@ font-size: xsmall;}
       width: 385px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 8vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -1346,22 +1339,23 @@ font-size: xsmall;}
 @media (max-width:1024px) and (orientation: portrait){
    .hero-resume h1{
       font-size: 60px;
-      margin-top: 40px;
+      margin: 40px 0;
     }
     .hero-resume{
-      height: 35vh;
+      height: 100%;
+      margin: 0;
     }
     .timeline>div .content span, .timeline article h2{
        font-size: 30px;
     }
 
     .hobbies-block .photo-block{
-      height: 75vh;
+      height: 100vh;
    }
    
    .title-hobbies{
       margin-top: 50px;
-      margin-bottom: 160px;
+      margin-bottom: 60px;
    }
    
    .hobbies-block .photo-block .card-0{
@@ -1374,7 +1368,7 @@ font-size: xsmall;}
    
    .hobbies-block .photo-block .card-3{
       left: 25%;
-      top: 300px;
+      top: 320px;
    }
    
    .hobbies-block .photo-block .card-4{
@@ -1398,180 +1392,157 @@ font-size: xsmall;}
    }
 
    /*--- home section ---*/
-   .hero-home{
-      height: 70vh;
-   }
+.hero-home{
+   height: 85vh;
+}
 
-   .hero-home article .text__glitch{
-      font-size: 60px;
-      width: 800px;
-   }
+.hero-home article .text__glitch{
+   font-size: 60px;
+   text-align: center;
+   width: 90%;
+}
 
-   /*--- project section ---*/
-   .projects-home{
-      padding: 0 0;
-      height: 70vh;
-   }
+/*--- project section ---*/
+.projects-home{
+   height: 50vh;
+}
 
-   .projects-home article h2{
-      font-size: 34px;
-      width: 500px;
-      margin-bottom: 60px;
-   }
+.projects-home .video-block{
+   width: 30%;
+   overflow: hidden;
+}
 
-   .projects-home article{
-      margin-bottom: 10px;
-   }
+.video1{
+   position: absolute;
+   right: 10%;
+   top: 95%;
+}
 
-   .projects-home .video-block{
-      width: 33%;
-      overflow: hidden;
-   }
+.video2{
+   position: absolute;
+   top: 115%;
+   left: 45%;
+   width: 25%;
+   overflow: hidden;
+   box-shadow: 0 0 1px 1px #222;
+}
 
-   .video-block video, .video2 video{
-      width: 100%;
-      object-fit: cover;
-   }
+/*--- about me section ---*/
+.about-me-home{
+  padding: 15% 10% 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-bottom: 0px;
+}
 
-   .video1{
-      position: absolute;
-      right: 5%;
-      top: 100%;
-   }
+.about-me-home div figure{
+  width: 45%;
+  height: 400px;
+  overflow: hidden;
+  margin-right: 80px;
+}
 
-   .video2{
-      top: 130%;
-      left: 40%;
-      width: 25%;
-   }
+.about-me-home div figure img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
 
-   /*--- about me section ---*/
-   .about-me-home{
-      padding: 0 10% 0 10%;
-      height: 60vh;
-   }
+.about-me-home div figure img:hover{
+  filter: grayscale(0%);
+}
 
-   .about-me-home div figure{
-      width: 45%;
-      height: 400px;
-   }
+.about-me-home div article{
+    width: 55%;
+}
 
-   .about-me-home div article{
-      width: 55%;
-      margin-top: -20px;
-   }
+.about-me-home div article p{
+   margin-bottom: 30px;
+}
 
-   .about-me-home div article p{
-      margin-bottom: 30px;
-   }
+/*--- clients section ---*/
+.section-clients{
+   padding: 2% 5%;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 50px;
+}
 
-   /*--- clients section ---*/
-   .section-clients{
-      padding: 2% 5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 35vh;
-      width: 100%;
-   }
+.section-clients h3{
+   margin-bottom: 80px;
+   font-weight: 400;
+   font-size: 18px;
+}
 
-   .section-clients h3{
-      margin-bottom: 80px;
-      font-weight: 400;
-      font-size: 18px;
-   }
+/*--- logos ---*/
+.section-clients figure{
+   opacity: 0.8;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: center;
+   transform: scale(1);
+}
 
-   /*--- logos ---*/
-   .section-clients figure{
-      padding: 0 5%;
-      opacity: 0.8;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: flex-end;
-      justify-content: center;
-      transform: scale(1.3);
-   }
+.section-clients figure span{
+   width: 120px;
+   height: auto;
+   overflow: hidden;
+   margin: 25px;
+}
 
-   .section-clients figure span{
-      width: 120px;
-      height: auto;
-      overflow: hidden;
-   }
+.section-clients figure span img{
+   width: 100%;
+   height: 100%;
+   object-fit: scale-down;
+}
 
-   .section-clients figure span img{
-      width: 100%;
-      height: 100%;
-      object-fit: scale-down;
-   }
+.section-clients figure .ct-logo{
+   width: 90px;
+   padding-bottom: 2px;
+}
 
-   .section-clients figure .ct-logo{
-      width: 90px;
-      padding-bottom: 2px;
-   }
+.section-clients figure .cd-logo{
+   width: 95px;
+   padding-bottom: 8px;
+}
 
-   .section-clients figure .cd-logo{
-      width: 95px;
-      padding-bottom: 8px;
-   }
+.section-clients figure .sg-logo{
+   width: 90px;
+}
 
-   .section-clients figure .sg-logo{
-      width: 90px;
-   }
+.section-clients figure .mk-logo{
+   padding-bottom: 7px;
+}
 
-   .section-clients figure .mk-logo{
-      padding-bottom: 7px;
-   }
-
-   .section-clients figure .jn-logo{
-      padding-bottom: 3px;
-   }
-
-   .projects-block .project-card{
-      padding: 15px;
-      width: 385px;
-   }
-
-   .projects-block .project-card article{
-      min-height: 8vh;
-   }
-
-   .projects-block .project-card article h2{
-      font-weight: 500;
-      font-size: 24px;
-      margin-bottom: 5px;
-   }
-   
-   .projects-block .project-card article h3{
-      font-weight: 400;
-      font-size: 14px;
-      color: rgb(95, 95, 95);
-   }
-   
-   .projects-block .project-card figure{
-      height: 25vh;
-      overflow: hidden;
-   }
-   
+.section-clients figure .jn-logo{
+   padding-bottom: 3px;
+}
 }
 
 @media (max-width:1024px) and (orientation: landscape){
     .hero-resume{
-      height: 70vh;
+      height: 100%;
+      margin: 0;
     }
     .hero-resume h1{
       font-size: 60px;
-      width: 90%;
-      margin-top: 40px;
+      width: 100%;
+      margin: 60px 0;
     }
 
     .hobbies-block .photo-block{
-      height: 115vh;
+      height: 170vh;
    }
    
    .title-hobbies{
       margin-top: 50px;
-      margin-bottom: 160px;
+      margin-bottom: 80px;
    }
    
    .hobbies-block .photo-block .card-0{
@@ -1728,9 +1699,9 @@ font-size: xsmall;}
       width: 385px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 12vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -1761,7 +1732,15 @@ font-size: xsmall;}
 
 @media (max-width:855px){
    .hero-resume h1{
-      font-size: 55px;
+      font-size: 35px;
+    }
+    .hero-resume{
+       height: 100%;
+       margin: 0;
+    }
+
+    .timeline article h2{
+       font-size: 30px;
     }
     .hero-project-details .hero-project-title{
       margin: 0 0 30px 0;
@@ -1912,14 +1891,18 @@ font-size: xsmall;}
 
 @media (max-width:823px) and (orientation: landscape){
    .hero-resume h1{
-      margin-top: 10px;
+      margin: 50px 0;
       font-size: 30px;
     }
     .hero-resume{
-      height: 45vh;
+      height: 100%;
+      margin: 0;
     }
     .hobbies-block .photo-block{
       height: 165vh;
+   }
+   .timeline article h2{
+      font-size: 30px;
    }
 
    .card-vertical{
@@ -1984,7 +1967,7 @@ font-size: xsmall;}
    .projects-home article h2{
       font-size: 34px;
       width: 500px;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
    }
 
    .projects-home article{
@@ -2005,6 +1988,7 @@ font-size: xsmall;}
       position: absolute;
       right: 5%;
       top: 170%;
+      display: none;
    }
 
    .video2{
@@ -2016,18 +2000,18 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 10% 0 10%;
+      padding: 0;
       height: 100vh;
    }
 
    .about-me-home div figure{
       width: 45%;
-      height: 400px;
+      height: 350px;
    }
 
    .about-me-home div article{
-      width: 55%;
-      margin-top: -90px;
+      width: 60%;
+      margin-top: 0px;
    }
 
    .about-me-home div article p{
@@ -2040,14 +2024,9 @@ font-size: xsmall;}
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 65vh;
+      height: 100%;
       width: 100%;
-   }
-
-   .section-clients h3{
-      margin-bottom: 80px;
-      font-weight: 400;
-      font-size: 18px;
+      margin-bottom: 30px;
    }
 
    /*--- logos ---*/
@@ -2059,13 +2038,14 @@ font-size: xsmall;}
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: center;
-      transform: scale(1.3);
+      transform: scale(1.2);
    }
 
    .section-clients figure span{
       width: 120px;
       height: auto;
       overflow: hidden;
+      margin: 20px;
    }
 
    .section-clients figure span img{
@@ -2101,10 +2081,10 @@ font-size: xsmall;}
       width: 328px;
       margin: 5px 8px 50px 8px;
    }
-
+/* 
    .projects-block .project-card article{
       min-height: 0vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -2129,9 +2109,9 @@ font-size: xsmall;}
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 25vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -2154,10 +2134,11 @@ font-size: xsmall;}
 @media (max-width:768px) and (orientation: portrait){
    .hero-resume h1{
       font-size: 45px;
-      margin-top: 55px;
+      margin: 55px 0;
     }
     .hero-resume{
-      height: 35vh;
+      height: 100%;
+      margin: 0;
     }
     .timeline>div .content span, .timeline article h2{
       font-size: 25px;
@@ -2166,7 +2147,7 @@ font-size: xsmall;}
       font-size: 16px;
    }
    .hobbies-block .photo-block{
-      height: 85vh;
+      height: 140vh;
    }
 
    .card-vertical{
@@ -2261,8 +2242,8 @@ font-size: xsmall;}
 
    .video1{
       position: relative;
-      top: 190px;
-      left: 150px;
+      top: 20px;
+      left: 250px;
    }
 
    .video2{
@@ -2271,8 +2252,9 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 0 0 0;
-      height: 100vh;
+      padding: 0 0 0 0;
+      height: 85vh;
+      margin: 0 0 100px 0;
    }
 
    .about-me-home>div{
@@ -2282,12 +2264,12 @@ font-size: xsmall;}
    .about-me-home div figure{
       width: 60%;
       height: 500px;
-      margin: 0 auto;
+      margin: 0 auto 70px auto;
+
    }
 
    .about-me-home div article{
       width: 100%;
-      margin-top: -90px;
    }
 
    .about-me-home div article p{
@@ -2317,7 +2299,7 @@ font-size: xsmall;}
    }
 
    .section-clients figure span{
-      width: 120px;
+      width: 100px;
       height: auto;
       overflow: hidden;
    }
@@ -2350,15 +2332,16 @@ font-size: xsmall;}
       padding-bottom: 3px;
    }
 
+
    .projects-block .project-card{
       padding: 10px;
       width: 328px;
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 14vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -2381,10 +2364,11 @@ font-size: xsmall;}
 @media (max-width:768px) and (orientation: landscape){
    .hero-resume h1{
       font-size: 45px;
-      margin-top: 55px;
+      margin: 55px 0;
     }
     .hero-resume{
-      height: 55vh;
+      height: 100%;
+      margin: 0;
     }
 
    .hobbies-block .photo-block{
@@ -2435,12 +2419,18 @@ font-size: xsmall;}
 @media (max-width:736px) and (orientation: landscape){
    .hero-resume h1{
       font-size: 32px;
-      width: 90%;
-      margin-top: 25px;
+      width: 100%;
+      margin: 50px 0;
     }
     .hero-resume{
-      height: 40vh;
+      height: 100%;
+      margin: 0;
     }
+
+    .timeline article h2{
+       font-size: 30px;
+    }
+
     .hobbies-block .photo-block{
        height: 155vh;
     }
@@ -2485,18 +2475,20 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 10% 0 10%;
-      height: 120vh;
+      padding: 0;
+      height: 100vh;
    }
 
    .about-me-home div figure{
-      width: 45%;
-      height: 400px;
+      width: 40%;
+      height: 350px;
+      margin-right: 40px;
+      
    }
 
    .about-me-home div article{
-      width: 55%;
-      margin-top: -90px;
+      width: 60%;
+      margin-top: 0px;
    }
 
    .about-me-home div article p{
@@ -2564,18 +2556,23 @@ font-size: xsmall;}
 @media (max-width:720px) and (orientation: landscape){
    .hero-resume h1{
       font-size: 32px;
-      width: 90%;
-      margin-top: 25px;
+      width: 100%;
+      margin: 50px 0;
     }
     .hero-resume{
-      height: 40vh;
+      height: 100%;
+      margin: 0;
     }
     .hobbies-block .photo-block{
-      height: 145vh;
+      height: 230vh;
    }
 
    .card-horizontal-travel{
       margin: 5px;
+   }
+
+   .timeline article h2{
+      font-size: 30px;
    }
 }
 
@@ -2634,9 +2631,9 @@ font-size: xsmall;}
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 28vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -2659,13 +2656,14 @@ font-size: xsmall;}
 @media(max-width:653px) and (orientation: landscape){
    .hero-resume h1{
       font-size: 24px;
-      margin-top: 10px;
+      margin: 50px 0;
     }
     .hero-resume{
-      height: 35vh;
+      height: 100%;
+      margin: 0;
     }
     .hobbies-block .photo-block{
-       height: 200vh;
+       height: 400vh;
     }
        /*--- home section ---*/
    .hero-home{
@@ -2704,11 +2702,15 @@ font-size: xsmall;}
       object-fit: cover;
    }
 
+   .video1{
+      display: none;
+   }
+
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 10% 0 10%;
-      height: 170vh;
+      padding: 0;
+      height: 100%;
    }
 
    .about-me-home div figure{
@@ -2717,8 +2719,8 @@ font-size: xsmall;}
    }
 
    .about-me-home div article{
-      width: 55%;
-      margin-top: -90px;
+      width: 60%;
+      margin-top: 0px;
    }
 
    .about-me-home div article p{
@@ -2728,7 +2730,7 @@ font-size: xsmall;}
    /*--- clients section ---*/
 
    .section-clients h3{
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       font-weight: 400;
       font-size: 18px;
    }
@@ -2742,7 +2744,7 @@ font-size: xsmall;}
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: center;
-      transform: scale(1.3);
+      transform: scale(1);
    }
 
    .section-clients figure span{
@@ -2829,15 +2831,26 @@ font-size: xsmall;}
       width: 230px;
       height: 150px;
    }
+
+   .about-me-home {
+      padding: 0;
+      height: 100%;
+   }
+
+   .about-me-home div article{
+      margin-top: 0;
+      width: 60%;
+   }
 }
 
 @media(max-width:568px) and (orientation: landscape){
    .hero-resume h1{
       font-size: 24px;
-      margin-top: 10px;
+      margin: 50px 0;
     }
     .hero-resume{
-      height: 35vh;
+      height: 100%;
+      margin: 0;
     }
     .hero-img{
       width: 100%;
@@ -2894,42 +2907,51 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 0 0 0;
-      height: 130vh;
+      padding: 0;
+      height: 100%;
    }
 
    .about-me-home div figure{
       width: 50%;
-      height: 300px;
-      margin: 0 auto;
+      height: 400px;
+      margin: 0 30px 0 0;
    }
 
    .about-me-home div article{
-      width: 100%;
-      margin-top: -90px;
+      width: 80%;
+      margin-top: 0px;
    }
 
    .about-me-home div article p{
       margin-bottom: 30px;
    }
+
+   .section-clients h3{
+      margin-bottom: 30px;
+   }
+
+   .section-clients figure{
+      transform: scale(1);
+   }
+
    .projects-block .project-card{
       padding: 10px;
       width: 350px;
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 35vh;
-   }
+   } */
    .projects-block .project-card{
       padding: 10px;
       width: 328px;
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 35vh;
-   }
+   } */
    
    .projects-block .project-card figure{
       height: 80vh;
@@ -2939,12 +2961,14 @@ font-size: xsmall;}
 }
 
 @media (max-width:568px) and (orientation: portrait){
+   
    .hero-resume h1{
       font-size: 35px;
-      margin-top: 10px;
+      margin: 50px 0;
     }
     .hero-resume{
-      height: 35vh;
+      height: 100%;
+      margin: 0;
     }
     /*--- home section ---*/
    .hero-home{
@@ -2988,6 +3012,7 @@ font-size: xsmall;}
       position: relative;
       top: 190px;
       left: 150px;
+      display: none;
    }
 
    .video2{
@@ -2996,28 +3021,27 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 0 0 0;
+      padding: 0;
       height: 100vh;
-   }
-
+   } 
+/* 
    .about-me-home>div{
       flex-direction: column;
-   }
+   }*/
 
    .about-me-home div figure{
       width: 70%;
       height: 400px;
-      margin: 0 auto;
    }
 
-   .about-me-home div article{
+   /*.about-me-home div article{
       width: 100%;
       margin-top: -90px;
    }
 
    .about-me-home div article p{
       margin-bottom: 30px;
-   }
+   } */
 
    /*--- clients section ---*/
    .section-clients{
@@ -3025,26 +3049,31 @@ font-size: xsmall;}
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35vh;
+      height: 100%;
       width: 100%;
    }
 
    /*--- logos ---*/
    .section-clients figure{
-      padding: 0 5%;
+      padding: 0;
       opacity: 0.8;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: center;
-      transform: scale(1.3);
+      transform: scale(1);
+   }
+
+   .section-clients h3{
+      margin-bottom: 40px;
    }
 
    .section-clients figure span{
-      width: 120px;
+      width: 100px;
       height: auto;
       overflow: hidden;
+      margin: 15px;
    }
 
    .section-clients figure span img{
@@ -3077,19 +3106,23 @@ font-size: xsmall;}
 }
 
 @media (max-width:425px) and (orientation: portrait){
+   .hero-resume{
+      margin: 0;
+   }
+
    .hero-resume h1{
-      font-size: 32px;
-      width: 90%;
-      margin-top: 25px;
+      font-size: 30px;
+      width: 100%;
+      margin: 25px 0;
     }
     .hero-resume{
-      height: 40vh;
+      height: 100%;
     }
     .btn, .btn-inverse{
       padding: 12px 15px;
       font-size: 16px;
       max-width: 170px;
-      height: 60px;
+      height: 100%;
    }
    .title-hobbies{
       margin: 20px 0 50px;
@@ -3097,7 +3130,7 @@ font-size: xsmall;}
    }
 
    .hobbies-block .photo-block{
-      height: 70vh;
+      height: 90vh;
    }
    .card-vertical{
       width: 130px;
@@ -3168,7 +3201,7 @@ font-size: xsmall;}
    /*--- project section ---*/
    .projects-home{
       padding: 0 0;
-      height: 90vh;
+      height: 100%;
       margin-bottom: 60px;
    }
 
@@ -3196,6 +3229,7 @@ font-size: xsmall;}
       position: relative;
       top: 190px;
       left: 150px;
+      display: none;
    }
 
    .video2{
@@ -3204,7 +3238,7 @@ font-size: xsmall;}
 
    /*--- about me section ---*/
    .about-me-home{
-      padding: 15% 0 0 0;
+      padding: 0;
       height: 100vh;
    }
 
@@ -3215,12 +3249,12 @@ font-size: xsmall;}
    .about-me-home div figure{
       width: 80%;
       height: 300px;
-      margin: 0 auto;
+      margin: 0 auto 50px auto;
    }
 
    .about-me-home div article{
       width: 100%;
-      margin-top: -90px;
+      margin-top: 0px;
    }
 
    .about-me-home div article p{
@@ -3230,28 +3264,29 @@ font-size: xsmall;}
 
    /*--- clients section ---*/
    .section-clients{
-      padding: 2% 5%;
+      padding: 2% 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35vh;
+      height: 100%;
       width: 100%;
    }
 
    .section-clients h3{
       font-size: 16px;
+      margin-bottom: 20px;
    }
 
    /*--- logos ---*/
    .section-clients figure{
-      padding: 0 5%;
+      padding: 0;
       opacity: 0.8;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: center;
-      transform: scale(1.3);
+      transform: scale(1);
    }
 
    .section-clients figure span{
@@ -3301,29 +3336,31 @@ font-size: xsmall;}
 }
 
 @media (max-width:375px) and (orientation: portrait){
-   .hero-resume h1{
-      font-size: 28px;
-    }
-    .hero-resume{
-      height: 30vh;
-    }
    .hobbies-block .photo-block{
-      height: 60vh;
+      height: 80vh;
    }
    .card-horizontal-travel{
       width: 150px;
       height: 100px;
+   }
+   .video1{
+      display: none;
+   }
+   .projects-home article h2{
+      font-size: 30px;
    }
 }
 
 @media (max-width:320px) and (orientation: portrait){
    .hero-resume h1{
       font-size: 24px;
-      margin-top: 20px;
     }
-    .hero-resume{
-      height: 28vh;
-    }
+
+
+    .hobbies-block .photo-block{
+      height: 100vh;
+   }
+
     .btn, .btn-inverse{
       padding: 10px 15px;
       font-size: 14px;
@@ -3353,9 +3390,9 @@ font-size: xsmall;}
       margin: 5px 8px 50px 8px;
    }
 
-   .projects-block .project-card article{
+   /* .projects-block .project-card article{
       min-height: 19vh;
-   }
+   } */
 
    .projects-block .project-card article h2{
       font-weight: 500;
@@ -3373,6 +3410,148 @@ font-size: xsmall;}
       height: 30vh;
       overflow: hidden;
    }
+
+   /*--- home section ---*/
+   .hero-home{
+      height: 80vh;
+   }
+
+   .hero-home article .text__glitch{
+      font-size: 36px;
+      width: 300px;
+      text-align: left;
+   }
+
+   /*--- project section ---*/
+   .projects-home{
+      padding: 0 0;
+      height: 90vh;
+      margin-bottom: 60px;
+   }
+
+   .projects-home article h2{
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 60px;
+   }
+
+   .projects-home article{
+      margin-bottom: 10px;
+   }
+
+   .projects-home .video-block{
+      width: 50%;
+      overflow: hidden;
+   }
+
+   .video-block video, .video2 video{
+      width: 100%;
+      object-fit: cover;
+   }
+
+   .video1{
+      position: relative;
+      top: 190px;
+      left: 150px;
+      display: none;
+   }
+
+   .video2{
+      display: none;
+   }
+
+   /*--- about me section ---*/
+   .about-me-home{
+      padding: 0;
+      height: 100%;
+   }
+
+   .about-me-home>div{
+      flex-direction: column;
+   }
+
+   .about-me-home div figure{
+      width: 80%;
+      height: 300px;
+      margin: 0 auto 50px auto;
+   }
+
+   .about-me-home div article{
+      width: 100%;
+      margin-top: 0px;
+   }
+
+   .about-me-home div article p{
+      margin-bottom: 30px;
+      font-size: 16px;
+   }
+
+   /*--- clients section ---*/
+   .section-clients{
+      padding: 2% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+   }
+
+   .section-clients h3{
+      font-size: 16px;
+      margin-bottom: 20px;
+   }
+
+   /*--- logos ---*/
+   .section-clients figure{
+      padding: 0;
+      opacity: 0.8;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: center;
+      transform: scale(1);
+   }
+
+   .section-clients figure span{
+      width: 90px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .section-clients figure span img{
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+   }
+
+   .section-clients figure .ct-logo{
+      width: 90px;
+      padding-bottom: 2px;
+      transform: scale(0.8);
+   }
+
+   .section-clients figure .cd-logo{
+      width: 95px;
+      padding-bottom: 8px;
+      transform: scale(0.9);
+   }
+
+   .section-clients figure .sg-logo{
+      width: 90px;
+   }
+
+   .section-clients figure .mk-logo{
+      padding-bottom: 7px;
+   }
+
+   .section-clients figure .jn-logo{
+      padding-bottom: 3px;
+   }
+   /* .media ul li:last-child{
+      margin-right: 0;
+   } */
+   
 }
 
 
