@@ -229,7 +229,7 @@ a{
 
 .btn{
    color: #222;
-   padding: 15px 20px;
+   padding: 8px 20px;
    border: 1px solid #4ec5ab;
    display: flex;
    flex-direction: row;
@@ -237,7 +237,7 @@ a{
    align-items: center;
    transition: .3s ease-in-out;
    max-width: 170px;
-   height: 55px;
+   max-height: 60px;
 }
  
  /* #9bd6cd */
@@ -257,7 +257,7 @@ a{
    align-items: center;
    transition: .3s ease-in-out;
    max-width: 170px;
-   height: 55px;
+   max-height: 60px;
 }
   
 .btn-inverse:hover{
@@ -809,23 +809,24 @@ footer section article h4{
 }
 
 .project-btn figure img{
-   filter: blur(3px) grayscale(100%);
+   filter: blur(3px);
 }
 
 .project-btn .btn-see-details{
    position: absolute;
    text-align: center;
    z-index: 9997;
-   background-color: rgba(48, 48, 48, 0.9);
+   background-color: rgb(22, 22, 22);
    color: #fff;
+   font-weight: 500;
    border: 1px solid #222;
-   height: 55px;
+   max-height: 60px;
 }
 
 .project-btn .btn-see-details:hover{
-   background-color: rgba(117, 212, 181, 1);
+   background-color:rgba(255, 255, 255, 0.5);
    color: #222;
-   border: 1px solid #79cfbd;
+   border: 1px solid #222;
 }
 
 
@@ -2156,6 +2157,12 @@ font-size: xsmall;}
    .timeline>div ul li p{
       font-size: 16px;
    }
+
+   .timeline>div ul li:nth-child(odd):before,
+   .timeline>div ul li:nth-child(even):before{
+      top:37px;
+   }
+
    .hobbies-block .photo-block{
       height: 140vh;
    }
@@ -3594,7 +3601,7 @@ font-size: xsmall;}
 
    .timeline>div ul li:nth-child(odd):before,
    .timeline>div ul li:nth-child(even):before{
-      top:45px;
-      left:18px;
+      top:37px;
+      left:17px;
    }
 }
