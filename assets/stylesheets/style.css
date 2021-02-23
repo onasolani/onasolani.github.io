@@ -525,7 +525,6 @@ footer section article h4{
 
 .copyright{
    font-size: 14px;
-   text-align: center;
    margin-top: 30px;
 }
 
@@ -707,7 +706,7 @@ footer section article h4{
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 35vh;
+   height: 45vh;
    width: 100%;
 }
 
@@ -780,6 +779,10 @@ footer section article h4{
    display: flex;
    flex-direction: column;
    margin: 10px 10px 50px 10px;
+}
+
+.projects-block .project-card .bg-color{
+   background-color: #bdd4cf;
 }
 
 .projects-block .project-card article{
@@ -889,6 +892,18 @@ footer section article h4{
    width: 100%;
    height: 550px;
    margin: 0 auto 70px auto;
+}
+
+.second-img{
+   width: 100%;
+   margin: 0 auto 70px auto;
+   overflow: hidden;
+}
+
+.second-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: scale-down;
 }
 
 .case-study-block{
@@ -1064,6 +1079,13 @@ font-size: xsmall;}
 
 .meihua-cover{
    background: url(/assets/img/meihua-mobile.jpg) no-repeat 50% 85%;
+   background-size: cover;
+}
+
+/*--- jisoo project ---*/
+
+.jisoo-cover{
+   background: url(/assets/img/JISOO1.JPG) no-repeat 90% 45%;
    background-size: cover;
 }
 
@@ -1621,7 +1643,7 @@ font-size: xsmall;}
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35vh;
+      height: 50vh;
       width: 100%;
    }
 
@@ -2173,7 +2195,7 @@ font-size: xsmall;}
    /*--- project section ---*/
    .projects-home{
       padding: 0 0;
-      height: 90vh;
+      height: 60vh;
       margin-bottom: 60px;
    }
 
@@ -2239,7 +2261,7 @@ font-size: xsmall;}
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35vh;
+      height: 55vh;
       width: 100%;
    }
 
