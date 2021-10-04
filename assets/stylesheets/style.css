@@ -774,7 +774,7 @@ footer section article h4{
 
 .projects-block .project-card{
    padding: 15px;
-   width: 395px;
+   width: 350px;
    height: auto;
    display: flex;
    flex-direction: column;
@@ -803,8 +803,9 @@ footer section article h4{
 }
 
 .projects-block .project-card figure{
-   height: 40vh;
-   max-height: 40vh;
+   height: 350px;
+   max-height: 350px;
+   width: 350px;
    overflow: hidden;
 }
 
