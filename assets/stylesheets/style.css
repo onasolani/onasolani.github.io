@@ -805,7 +805,7 @@ footer section article h4{
 .projects-block .project-card figure{
    height: 350px;
    max-height: 350px;
-   width: 350px;
+  /* width: 350px;*/
    overflow: hidden;
 }
 
