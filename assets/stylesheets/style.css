@@ -415,7 +415,7 @@ a{
    margin-top: 140px;
 }
 
-#resize.active {
+#resize .active {
    visibility: visible;
    opacity: 1;
 }
