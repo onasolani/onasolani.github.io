@@ -363,7 +363,7 @@ a{
    transition: all 0.3s ease-out;
 }
 
-#resize.close-btn {
+#resize .close-btn {
    position: fixed;
    right: 40px;
    margin-top: 30px;
@@ -373,7 +373,7 @@ a{
    cursor: pointer;
 }
 
-#resize.close-btn:hover{
+#resize .close-btn:hover{
    color: #4ec5ab;
    transition: all 0.3s ease-out;
 }
@@ -445,7 +445,7 @@ a{
          display: none;
    }
 
-   #resize.close-btn {
+   #resize .close-btn {
       right: 40px;
       margin-top: 30px;
    }
@@ -457,13 +457,13 @@ a{
    }
 }
 @media(max-width: 425px){
-   #resize.close-btn {
+   #resize .close-btn {
       right: 25px;
       margin-top: 30px;
    }
 }
 @media(max-width: 280px){
-   #resize.close-btn{
+   #resize .close-btn{
       margin-top: 28px;
       right: 20px;
    }
