@@ -44,12 +44,12 @@
    <div class="container-block">
       <header>
          <nav class="nav">
-            <span id="brand" class="wow fadeInUp" data-wow-delay="0.4s">
-               <a href="../index.html">onasolani</a>
-            </span>
+            <a href="index.html" id="brand" class="wow fadeInUp" data-wow-delay="0.4s"><span>onasolani</span></a>
             <ul id="menu">
-               <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="../hobbies.html">hobbies</a></li>
-               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="../aboutme.html">my life</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="projects.html">projects</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="playground.html">playground</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="photography.html">photography</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="aboutme.html">about</a></li>
             </ul>
             <div id="toggle">
                <div class="span">menu</div>
@@ -58,10 +58,11 @@
          <div id="resize">
             <div class="close-btn">close</div>
             <ul id="menu">
-               <li><a href="../index.html">home</a></li>
-               <li><a href="../projects.html">projects</a></li>
-               <li><a href="../hobbies.html">hobbies</a></li>
-               <li><a href="../aboutme.html">my life</a></li>
+               <li><a href="index.html">home</a></li>
+               <li><a href="projects.html">projects</a></li>
+               <li><a href="playground.html">playground</a></li>
+               <li><a href="photography.html">photography</a></li>
+               <li><a href="aboutme.html">about</a></li>
             </ul>
          </div>
       </header>
@@ -211,24 +212,27 @@
          </div>
          <a class="more-btn wow fadeInUp" data-wow-delay="0.8s" href="../projects.html">See more projects</a>
       </main>
-      <footer>
-         <section>
-            <article class="media">
-               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Follow me</h4>
+      <footer class="footer bg-section">
+         <div class="footer__wrapper">
+                <div class="footer__contact">
+                     <p class="footer__title">Drop me a line <!--<span>👋</span>--></p>
+                     <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
+                        onasolani@gmail.com
+                      </a>
+               </div>
+            <div class="footer__media">
                <ul>
-                  <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/onasolani" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.github.com/onasolani" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="1s"><a href="https://onasolani.medium.com" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
+                  <li><Link to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</Link></li>
+                  <li><Link to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</Link></li>
+                  <li><Link to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</Link></li>
                </ul>
-            </article>
-            <article class="contactme">
-               <h4 class="wow fadeInUp" data-wow-delay="0.8s">Drop me a line 👋</h4>
-               <a href="mailto:onasolani@gmail.com" class="wow fadeInUp" data-wow-delay="1s">onasolani@gmail.com</a>
-            </article>
-         </section>
-         <div class="copyright wow fadeInUp" data-wow-delay="1s">
-            I designed and coded this website from scratch &copy;
+            </div>
+         </div>
+         <div class="footer__copyright">
+            I designed and coded this website from scratch &copy; 
             <script>document.write(new Date().getFullYear());</script>
+            <br/>
+            <i>I keep your privacy, for this reason this website don't save any cookie</i>
          </div>
       </footer>
    </div>

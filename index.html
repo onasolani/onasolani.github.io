@@ -29,33 +29,36 @@
    <!-- css -->
    <link rel="stylesheet" href="/assets/stylesheets/animate.css">
    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+   <link rel="stylesheet" href="/assets/stylesheets/footer.css"
    <!-- Font -->
    <link href="//db.onlinewebfonts.com/c/1360e81c1500b16a3115fc890863a8a3?family=TerminaW00-Heavy" rel="stylesheet" type="text/css"/>
    <!-- ionicons -->
-   <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>  
    <!-- wow -->
    <script src="/assets/js/wow.min.js"></script>
    <!-- JQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <!-- GSAP -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+   <!-- CircleType -->
+   <script src="/assets/js/circletype.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script> -->
+
 </head>
-<body> 
-   <div class="container-block">
+<body id="scroll"> 
       <header>
          <nav class="nav">
-            <span id="brand" class="wow fadeInUp" data-wow-delay="0.4s">
-               <a href="index.html">onasolani</a>
-            </span>
+            <a href="index.html" id="brand" class="wow fadeInUp"><span>onasolani</span></a>
             <ul id="menu">
                <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="projects.html">projects</a></li>
-               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="hobbies.html">hobbies</a></li>
-               <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="aboutme.html">my life</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="playground.html">playground</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="photography.html">photography</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="aboutme.html">about</a></li>
             </ul>
             <div id="toggle">
-               <div class="span">menu</div>
+               <div class="span wow fadeInUp" data-wow-delay="0.2s">menu</div>
             </div>
          </nav>
          <div id="resize">
@@ -63,101 +66,121 @@
             <ul id="menu">
                <li><a href="index.html">home</a></li>
                <li><a href="projects.html">projects</a></li>
-               <li><a href="hobbies.html">hobbies</a></li>
-               <li><a href="aboutme.html">my life</a></li>
+               <li><a href="playground.html">playground</a></li>
+               <li><a href="photography.html">photography</a></li>
+               <li><a href="aboutme.html">about</a></li>
             </ul>
          </div>
       </header>
       <main>
-         <section class="section bg-section hero-home">
-            <article>
-               <h1 class="block-effect" style="--td: 0.8s">
-                  <div
-                     class="block-reveal text__glitch"
-                     style="--bc: #8dd4c5; --d: .1s">
-                     Building memorable experiences through design and technology
-                  </div>
-                </h1>
-            </article>
-         </section>
-         <section class="section-clients bg-section">
-            <h3 class="wow fadeInUp" data-wow-delay="0.2s">A FEW OF THE PLACES I WORKED FOR</h2>
-            <figure>
-               <span class="ct-logo wow fadeInUp" data-wow-delay="0.4s">
-                  <img src="/assets/img/cartier-logo.png" alt="">
-               </span>
-               <span class="gm-logo wow fadeInUp" data-wow-delay="0.6s">
-                  <img src="/assets/img/gmsolution.png" alt="">
-               </span> 
-               <span class="mk-logo wow fadeInUp" data-wow-delay="0.8s">
-                  <img src="/assets/img/mk-logo.png" alt="">
-               </span>
-               <span class="cd-logo wow fadeInUp" data-wow-delay="1s">
-                  <img src="/assets/img/condair-logo.png" alt="">
-               </span>
-               <span class="sg-logo wow fadeInUp" data-wow-delay="1.2s">
-                  <img src="/assets/img/sigma-transparente.png" alt="">
-               </span>
-               <span class="jn-logo wow fadeInUp" data-wow-delay="1.4s">
-                  <img src="/assets/img/jijonenca.png" alt="">
-               </span>
-            </figure>
-         </section>
-         <section class="section bg-section projects-home" data-bg="#222">
-            <article>
-               <h2 class="wow fadeInUp" data-wow-delay="0.6">I transform the pain points into opportunities and turn them towards creative solutions using visual design and interaction skills.</h2>
-               <a class="btn-inverse projects-home-btn" href="/projects.html">my work</a>
-            </article>
-            <!-- <figure class="video-block video1 wow fadeInUp">
-                  <video playsinline loop autoplay preload muted>
-                     <source src="/assets/videos/blotter.mov" type="video/mp4">
-                 </video>
-            </figure>
-            <figure class="video2 wow fadeInUp">
-               <video playsinline loop autoplay preload muted>
-                  <source src="/assets/videos/ui-css.mp4" type="video/mp4">
-               </video>
-            </figure> -->
-         </section>
-         <section class="section bg-section about-me-home">
-            <div>
-               <figure>
-                  <img src="/assets/img/avatar.jpg" alt="self-portrait">
-               </figure>
-               <article>
-                  <p>Hi! 👋 I'm Ona, a Barcelona–based UX/UI Engineer, a hybrid person between design and development 👩🏻‍💻. I have worked for several international companies such as <a class="links" href="https://www.everis.com/spain/es/home-spain" target="_blank">Everis</a>, <a class="links" href="https://www.michaelkors.cn/" target="_blank">Michael Kors</a>, <a class="links" href="https://www.cartier.cn/" target="_blank">Cartier</a>, <a class="links" href="https://www.ey.com/" target="_blank">EY</a>.
-                     <br><br>
-                     Thanks to my experiences in life, I can bring sharp analytical skills and a commitment to add new values through creative-driven solutions 💭. </p>
-                  <a class="btn" href="/aboutme.html">let's gossip 👀</a>
-               </article>
+         <section class="hero" data-bg="#FFFFFF">
+            <div class="hero__wrapper">
+                  <!-- <div class="hero__bgImage">
+                     <figure class="image_wrapper">
+                     <img src="/assets/img/Cube0.png" alt='background hero'/>
+                     </figure>
+                  </div> -->
+               <div class="hero__contentWrapper">
+                  <h1 class="hero__title wow fadeInUp" data-wow-delay="0.4s">Building memorable experiences through design and technology</h1>
+               </div>
+            </div>
+            <div class="circular-wrapper wow fadeInUp" data-wow-delay="0.6s">
+               <div class="circular-text">
+                  <span id="rotated">
+                     croll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; s
+                  </span>
+               </div>
+               <div class="arrow">
+                  <ion-icon name="arrow-down"></ion-icon>
+               </div>
             </div>
          </section>
-      </main>
-      <footer>
-         <section>
-            <article class="media">
-               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Follow me</h4>
-               <ul>
-                  <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/onasolani" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.github.com/onasolani" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="1s"><a href="https://onasolani.medium.com" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
-               </ul>
-            </article>
-            <article class="contactme">
-                  <h4 class="wow fadeInUp" data-wow-delay="0.8s">Drop me a line 👋</h4>
-                  <a href="mailto:onasolani@gmail.com" class="wow fadeInUp" data-wow-delay="1s">onasolani@gmail.com</a>
-            </article>
+         
+         <section class="home__partners bg-section" data-bg="#FFFFFF">
+            <!-- <h3 class="wow fadeInUp" data-wow-delay="0.8s">A FEW OF THE PLACES I WORKED FOR</h2> -->
          </section>
-         <div class="copyright wow fadeInUp" data-wow-delay="1s">
-            I designed and coded this website from scratch &copy;
-            <script>document.write(new Date().getFullYear())</script>
+         <section class="section section-between home__projects bg-section" data-bg="#000000">
+            <h2 class="wow fadeInUp" data-wow-delay="0.6">Selected projects</h2>
+            <div class="projects-wrapper">
+               <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                  <a href="/projects/fitmeal-app.html">
+                     <figure class="image_wrapper">
+                        <img src="/assets/img/fitmeal-mockup1.jpg" alt="fitmeal app project">
+                     </figure>
+                  </a>
+                  <div>
+                     <a href="/projects/fitmeal-app.html">
+                        <h3>Fitmeal App</h3></a>
+                     <span>UX/UI Design, Rapid Prototyping, Wireframing, User flows, Full Stack Dev</span>
+                  </div>
+               </div>
+               <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                  <a href="/projects/tmb-wallet-app.html">
+                     <figure class="image_wrapper">
+                        <img src="/assets/img/tmb.jpg" alt="fitmeal app project">
+                     </figure>
+                  </a>
+                  <div>
+                     <a href="/projects/tmb-wallet-app.html"><h3>TMB wallet App</h3></a>
+                     <span>UX/UI Design, Rapid Prototyping, Wireframing, User flows, Design Thinking</span>
+                  </div>
+               </div>
+            </div>
+            <a class="btn" href="/projects.html">explore <ion-icon name="arrow-forward-outline"></ion-icon></a>
+         </section>
+         <!-- <section class="section section-between home__aboutme bg-section" data-bg="#FFFFFF">
+               <figure class="image_wrapper">
+                  <img src="/assets/img/avatar.jpg" alt="self-portrait">
+               </figure>
+               <div>
+                  <p>Hi! 👋 I'm Ona, a Barcelona–based UX/UI Engineer, who loves design and development👩🏻‍💻. I'm part of the Young Jury Member at <a class="links" href="http://www.awwwards.com/" target="_blank" rel="noreferrer noopener">Awwwards</a>.
+                     <br><br>
+                     Thanks to my experiences in life, I can bring sharp analytical skills and a commitment to add new values through creative-driven solutions 💭. </p>
+                  <a class="btn inverse" href="/aboutme.html">let's gossip 👀</a>
+               </div>
+         </section> -->
+      </main>
+      <footer class="footer bg-section">
+         <div class="footer__wrapper">
+                <div class="footer__contact">
+                     <p class="footer__title wow fadeInUp">Drop me a line <!--<span>👋</span>--></p>
+                     <a class="footer__email wow fadeInUp" data-wow-delay="0.2s" href="mailto:onasolani@gmail.com">
+                        onasolani@gmail.com
+                      </a>
+               </div>
+            <div class="footer__media">
+               <ul>
+                  <li class="wow fadeInUp" data-wow-delay="0.4s"><Link to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</Link></li>
+                  <li class="wow fadeInUp" data-wow-delay="0.6s"><Link to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</Link></li>
+                  <li class="wow fadeInUp" data-wow-delay="0.8s"><Link to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</Link></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__copyright wow fadeInUp" data-wow-delay="0.2s">
+            I designed and coded this website from scratch &copy; 
+            <script>document.write(new Date().getFullYear());</script>
+            <br/>
+            <i>I keep your privacy, for this reason this website don't save any cookie</i>
          </div>
       </footer>
-   </div>
    <script src="/assets/js/bg-change-color.js"></script>
    <script src="/assets/js/navbar-gsap.js"></script>
    <script type="text/javaScript">
       new WOW().init()
+
+      const circleType = new CircleType(document.getElementById('rotated'))
+         .radius(80);
+         $(window).scroll(function(){
+            var offset = $(window).scrollTop();
+            offset = offset * 0.8;
+            $(".circular-text").css({
+               "-moz-transform" : "rotate(" + offset + "deg)",
+               "-webkit-transform" : "rotate(" + offset + "deg)",
+               "-o-transform" : "rotate(" + offset + "deg)",
+               "-ms-transform" : "rotate(" + offset + "deg)",
+               "transform" : "rotate(" + offset +  "deg)"
+            });
+         });
    </script>
 <script> console.log('Hi, explorer! 👋  I am delighted that you are inspecting my web 🤩. If you have any inquiring 🤔, ideas 💭, or compliments 😊, do not hesitate to say hello to me here 🙌: onasolani@gmail.com 📩.')</script>   
 </body>

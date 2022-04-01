@@ -29,6 +29,8 @@
    <!-- css -->
    <link rel="stylesheet" href="/assets/stylesheets/animate.css">
    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+   <link rel="stylesheet" href="/assets/stylesheets/footer.css"
+
    <!-- ionicons -->
    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
@@ -36,23 +38,24 @@
    <script src="/assets/js/wow.min.js"></script>
    <!-- JQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
    <!-- GSAP -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
-<body> 
-   <div class="container-block">
+<body id="scroll"> 
       <header>
          <nav class="nav">
-            <span id="brand" class="wow fadeInUp" data-wow-delay="0.4s">
-               <a href="index.html">onasolani</a>
-            </span>
+            <a href="index.html" id="brand" class="wow fadeInUp"><span>onasolani</span></a>
             <ul id="menu">
-               <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="hobbies.html">hobbies</a></li>
-               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="aboutme.html">my life</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="projects.html">projects</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="playground.html">playground</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="photography.html">photography</a></li>
+               <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="aboutme.html">about</a></li>
             </ul>
             <div id="toggle">
-               <div class="span">menu</div>
+               <div class="span wow fadeInUp" data-wow-delay="0.2s">menu</div>
             </div>
          </nav>
          <div id="resize">
@@ -60,245 +63,247 @@
             <ul id="menu">
                <li><a href="index.html">home</a></li>
                <li><a href="projects.html">projects</a></li>
-               <li><a href="hobbies.html">hobbies</a></li>
-               <li><a href="aboutme.html">my life</a></li>
+               <li><a href="playground.html">playground</a></li>
+               <li><a href="photography.html">photography</a></li>
+               <li><a href="aboutme.html">about</a></li>
             </ul>
          </div>
       </header>
       <main>
-         <section class="projects-block">
-            <div class="project-card wow fadeInUp project-btn" data-wow-delay="0.2s">
-               <figure class="bg-color">
-                  <a class="btn btn-see-details" href="">Under construction</a>
-                  <!--<img src="" alt="">-->
-               </figure>
-               <article>
-                  <h2>Gestime</h2>
-                  <h3><em>UX/UI, Branding, Wireframing, User flows, Architecture, Full Stack Dev</em></h3>
-               </article>
+         <section class="section section-first navbar-height">
+         <div class="projects-wrapper">
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/fitmeal-app.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/fitmeal-mockup1.jpg" alt="fitmeal app project">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/fitmeal-app.html">
+                     <h3>Fitmeal App</h3></a>
+                  <span>UI Design, Wireframing, IA, Design Thinking, User Stories, Roadmap, Full Stack Dev</span>
+               </div>
             </div>
-
-            <div class="project-card wow fadeInUp project-btn" data-wow-delay="0.6s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/fitmeal.html">See project</a>
-                  <img src="/assets/img/fitmeal-mockup1.jpg" alt="">
-               </figure>
-               <article>
-                  <h2>Fitmeal</h2>
-                  <h3><em>UX/UI, Branding, Graphic Design, Prototyping, Wireframing, User flows, Full Stack Dev, App</em></h3>
-               </article>
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/tmb-wallet-app.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/tmb.jpg" alt="tmb wallep app project">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/tmb-wallet-app.html">
+                     <h3>TMB wallet App</h3></a>
+                  <span>UX/UI Design, Prototyping, Design Thinking</span>
+               </div>
             </div>
-            
-            <div class="project-card wow fadeInUp" data-wow-delay="0.4s">
-               <figure>
-                  <video playsinline loop autoplay preload muted>
-                     <source src="/assets/videos/btn-animation.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Button hover effect</h2>
-                  <h3><em>UI Animation, Motion Graphics, Interaction Design, Front–end Dev</em></h3>
-               </article>
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/travel-beyond.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/travel-beyond.jpg" alt="travel beyond project">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/travel-beyond.html">
+                     <h3>Travel Beyond</h3></a>
+                  <span>UI Design</span>
+               </div>
             </div>
-
-            <div class="project-card wow fadeInUp" data-wow-delay="0.8s">
-               <figure>
-                  <video playsinline loop autoplay preload muted style="transform: scale(1.2); transform-origin: 50% 80%;">
-                     <source src="/assets/videos/login.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Login animation</h2>
-                  <h3><em>UI Animation, Branding, Front–end Dev</em></h3>
-               </article>
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/moodsic-app.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/travel-beyond.jpg" alt="travel beyond app project">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/moodsic.html">
+                     <h3>Moodsic App</h3></a>
+                  <span>UI Design, Prototyping</span>
+               </div>
             </div>
-
-            <div class="project-card wow fadeInUp project-btn" data-wow-delay="0.4s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/meihua.html">See project</a>
-                  <img src="/assets/img/meihua-mobile.jpg" alt="">
-               </figure>
-               <article>
-                  <h2>Meihua</h2>
-                  <h3><em>UX/UI, Branding, Prototyping, Wireframing, User flows, Front–end Dev, e-commerce, Web/App</em></h3>
-               </article>
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/datapet-app.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/travel-beyond.jpg" alt="travel beyond app project">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/datapet.html">
+                     <h3>DataPet App</h3></a>
+                  <span>UX Research, UI Design, Wireframing, Prototyping, Design Thinking, Quantitative & Qualitative, Roadmap, User Stories</span>
+               </div>
             </div>
-            <div class="project-card  wow fadeInUp" data-wow-delay="0.6s">
-               
-               <figure>
-                  <video playsinline loop autoplay preload muted style="object-fit: contain; transform: scale(1.3); transform-origin: 10% 50%;">
-                     <source src="/assets/videos/neumorphism.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Neumorphism</h2>
-                  <h3><em>Graphic Design, Front–end Dev, Interaction Design</em></h3>
-               </article>
+            <div class="card dark wow fadeInUp" data-wow-delay="0.6s">
+               <a href="/projects/jisoo-magazine.html">
+                  <figure class="image_wrapper">
+                     <img src="/assets/img/JISOO1.JPG" alt="jisoo magazine">
+                  </figure>
+               </a>
+               <div>
+                  <a href="/projects/jisoo-magazine.html">
+                     <h3>DataPet App</h3></a>
+                  <span>Graphic Design, Editorial Design, Layout</span>
+               </div>
             </div>
-            <div class="project-card  wow fadeInUp project-btn" data-wow-delay="0.8s">
-               <figure>
-                  <a class="btn btn-see-details" href="projects/tmb-wallet.html">see project</a>
-                  <img src="/assets/img/tmb.jpg" alt="">
-               </figure>
-               <article>
-                  <h2>TMB wallet</h2>
-                  <h3><em>UX/UI, Branding, Prototyping, Wireframing, User flows, Design Thinking, App</em></h3>
-               </article>
+         </div>
+      </section>
+         <!-- <div class="navigation-container">
+         <div class="navigation-wrapper">
+            <div class="project-preview-wrapper">
+              <div class="project-preview"></div>
             </div>
-            <div class="project-card  wow fadeInUp" data-wow-delay="0.4s">
-               <figure>
-                  <video playsinline loop autoplay preload muted style="transform: scale(1.2); transform-origin: 70% 20%;">
-                     <source src="/assets/videos/ring.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Ring!</h2>
-                  <h3><em>UI Animation, Motion graphics, Front–end Dev</em></h3>
-               </article>
-            </div>
-            <div class="project-card  wow fadeInUp project-btn" data-wow-delay="0.8s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/jisoo.html">See project</a>
-                  <img src="/assets/img/JISOO1.JPG" alt="">
-               </figure>
-               <article>
-                  <h2>JISOO Magazine</h2>
-                  <h3><em>Branding, Editorial Design, Graphic Design, Layout</em></h3>
-               </article>
-            </div>
-            <div class="project-card  wow fadeInUp" data-wow-delay="0.8s">
-               <figure>
-                  <video playsinline loop autoplay preload muted style="transform: scale(1.1); transform-origin: 80% 60%;">
-                     <source src="/assets/videos/baffle.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Baffle</h2>
-                  <h3><em>UI Animation, Front–end Dev</em></h3>
-               </article>
-            </div>
-            <!-- <div class="project-card  wow fadeInUp project-btn" data-wow-delay="0.8s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/#">under construction</a>
-                  <img src="/assets/img/JISOO1.JPG" alt="">
-               </figure>
-               <article>
-                  <h2>JISOO Magazine</h2>
-                  <h3><em>Branding, Editorial Design, Graphic Design, Layout</em></h3>
-               </article>
-            </div> -->
-            <div class="project-card  wow fadeInUp" data-wow-delay="0.4s">
-               <figure>
-                  <video playsinline loop autoplay preload muted style="transform: scale(1.25); transform-origin: 60% 50%;">
-                     <source src="/assets/videos/text-reveal.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Text reveal effect</h2>
-                  <h3><em>UI Animation, Front–end Dev</em></h3>
-               </article>
-            </div>
-            <!-- <div class="project-card  wow fadeInUp project-btn" data-wow-delay="0.8s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/#">under construction</a>
-                  <img src="/assets/img/JISOO1.JPG" alt="">
-               </figure>
-               <article>
-                  <h2>JISOO Magazine</h2>
-                  <h3><em>Branding, Editorial Design, Graphic Design, Layout</em></h3>
-               </article>
-            </div> -->
-            <div class="project-card  wow fadeInUp" data-wow-delay="0.6s">
-               <figure>
-                  <video playsinline loop autoplay preload muted style="transform: scale(1.25); transform-origin: 50% 50%;">
-                     <source src="/assets/videos/scroll-reveal.mov" type="video/mp4">
-                  </video>
-               </figure>
-               <article>
-                  <h2>Scroll reveal effect</h2>
-                  <h3><em>UI Animation, Front–end Dev</em></h3>
-               </article>
-            </div>
-            <!-- <div class="project-card  wow fadeInUp project-btn" data-wow-delay="0.8s">
-               <figure>
-                  <a class="btn btn-see-details" href="/projects/#">under construction</a>
-                  <img src="/assets/img/JISOO1.JPG" alt="">
-               </figure>
-               <article>
-                  <h2>JISOO Magazine</h2>
-                  <h3><em>Branding, Editorial Design, Graphic Design, Layout</em></h3>
-               </article>
-            </div> -->
-         </section>
-         <!-- <section class="hero-hobbies-block">
-            <div class="wrapper-hobbies">
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/login.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/ui-css.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/slide.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/baffle.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/btn-animation.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/neumorphism.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/blotter.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-block">
-                    <video playsinline loop autoplay preload muted>
-                        <source src="/assets/videos/ring.mov" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-         </section> -->
+            <ul class="navigation-list">
+              <li class="navigation-item wow fadeInUp">
+                <a class="navigation-link navigation-link-1" href="#">
+                  <span class="title">fitmealapp</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <div class="project-overlay"></div>
+              <li class="navigation-item wow fadeInUp" data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-2" href="#">
+                  <span class="title">Offbeat</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-3" href="#">
+                  <span class="title">Expansions</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-4" href="#">
+                  <span class="title">Canals</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-5" href="#">
+                  <span class="title">Asterisks</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-6" href="#">
+                  <span class="title">Charger</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-7" href="#">
+                  <span class="title">Unclocked</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+              <hr/>
+              <li class="navigation-item wow fadeInUp"  data-wow-delay="0.2s">
+                <a class="navigation-link navigation-link-8" href="#">
+                  <span class="title">Craft</span>
+                  <span class="tags">UX/UI Design, Web Development</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="progressbar"></div>
+         </div> -->
       </main>
-      <footer>
-         <section>
-            <article class="media">
-               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Follow me</h4>
+
+      <footer class="footer bg-section">
+         <div class="footer__wrapper">
+                <!-- <div class="footer__contact">
+                     <p class="footer__title">Drop me a line <span>👋</span></p>
+                     <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
+                        onasolani@gmail.com
+                      </a>
+               </div> -->
+            <div class="footer__media">
                <ul>
-                  <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/onasolani" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.github.com/onasolani" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="1s"><a href="https://onasolani.medium.com" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
+                  <li><Link to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</Link></li>
+                  <li><Link to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</Link></li>
+                  <li><Link to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</Link></li>
                </ul>
-            </article>
-            <article class="contactme">
-                  <h4 class="wow fadeInUp" data-wow-delay="0.8s">Drop me a line 👋</h4>
-                  <a href="mailto:onasolani@gmail.com" class="wow fadeInUp" data-wow-delay="1s">onasolani@gmail.com</a>
-            </article>
-         </section>
-         <div class="copyright wow fadeInUp" data-wow-delay="1s">
-            I designed and coded this website from scratch &copy;
+            </div>
+         </div>
+         <div class="footer__copyright">
+            I designed and coded this website from scratch &copy; 
             <script>document.write(new Date().getFullYear());</script>
+            <br/>
+            <i>I keep your privacy, for this reason this website don't save any cookie</i>
          </div>
       </footer>
-   </div>
+
    <script src="/assets/js/navbar-gsap.js"></script>
    <script type="text/javaScript">
       new WOW().init();
+
+      $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+               width: "500px",
+               // height: "300px",
+               ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".navigation-link-1").hover(function() {
+        $(".project-preview").css({ "background-image": "url(/assets/img/fitmeal-mockup1.jpg)" });
+      });
+
+      $(".navigation-link-2").hover(function() {
+        $(".project-preview").css({ "background-image": "url(/assets/img/tmb.jpg)" });
+      });
+
+      $(".navigation-link-3").hover(function() {
+        $(".project-preview").css({ "background-image": "url(/assets/img/meihua-mobile.jpg)" });
+      });
+
+      $(".navigation-link-4").hover(function() {
+        $(".project-preview").css({ "background-image": "url(img-4.jpg)" });
+      });
+
+      $(".navigation-link-5").hover(function() {
+        $(".project-preview").css({ "background-image": "url(img-5.jpg)" });
+      });
+
+      $(".navigation-link-6").hover(function() {
+        $(".project-preview").css({ "background-image": "url(img-6.jpg)" });
+      });
+
+      $(".navigation-link-7").hover(function() {
+        $(".project-preview").css({ "background-image": "url(img-7.jpg)" });
+      });
+
+      $(".navigation-link-8").hover(function() {
+        $(".project-preview").css({ "background-image": "url(img-8.jpg)" });
+      });
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+          dh = $(document).height(),
+          wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $(".progressbar").css("height", scrollPercent + "%");
+      });
    </script>
    <script> console.log('Hi, explorer! 👋  I am delighted that you are inspecting my web 🤩. If you have any inquiring 🤔, ideas 💭, or compliments 😊, do not hesitate to say hello to me here 🙌: onasolani@gmail.com 📩.')</script>   
 </body>

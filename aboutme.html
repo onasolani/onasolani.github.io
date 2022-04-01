@@ -29,6 +29,7 @@
    <!-- css -->
    <link rel="stylesheet" href="/assets/stylesheets/animate.css">
    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+   <link rel="stylesheet" href="/assets/stylesheets/footer.css"
    <!-- ionicons -->
    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
@@ -42,36 +43,53 @@
    <!-- Anime JS -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
-<body data-barba="wrapper">
-   <div class="container-block">
-      <header>
-         <nav class="nav">
-            <span id="brand" class="wow fadeInUp" data-wow-delay="0.4s">
-               <a href="index.html">onasolani</a>
-            </span>
-            <ul id="menu">
-               <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="projects.html">projects</a></li>
-               <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="hobbies.html">hobbies</a></li>
-            </ul>
-            <div id="toggle">
-               <div class="span">menu</div>
-            </div>
-         </nav>
-         <div id="resize">
-            <div class="close-btn">close</div>
-            <ul id="menu">
-               <li><a href="index.html">home</a></li>
-               <li><a href="projects.html">projects</a></li>
-               <li><a href="hobbies.html">hobbies</a></li>
-               <li><a href="aboutme.html">my life</a></li>
-            </ul>
+<body id="scroll"> 
+   <header>
+      <nav class="nav">
+         <a href="index.html" id="brand" class="wow fadeInUp"><span>onasolani</span></a>
+         <ul id="menu">
+            <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="projects.html">projects</a></li>
+            <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="playground.html">playground</a></li>
+            <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="photography.html">photography</a></li>
+            <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="aboutme.html">about</a></li>
+         </ul>
+         <div id="toggle">
+            <div class="span wow fadeInUp" data-wow-delay="0.2s">menu</div>
          </div>
-      </header>
+      </nav>
+      <div id="resize">
+         <div class="close-btn">close</div>
+         <ul id="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="playground.html">playground</a></li>
+            <li><a href="photography.html">photography</a></li>
+            <li><a href="aboutme.html">about</a></li>
+         </ul>
+      </div>
+   </header>
+   <main>
       <main data-barba="container" data-barba-namespace="home-section">
          <a class="btn resume-cv wow fadeInUp" data-wow-delay="0.6s" href="assets/resume-ona-solani-2021.pdf" target="_blank"> Resume here!</a>
-         <section class="section hero-resume">
-            <h1 class="wow fadeInUp" data-wow-delay="0.4s">Welcome to my life! If you are here, it's probably because you want to know more about me. 🤘</h1>
+         <section class="hero" data-bg="#FFFFFF">
+            <div class="hero__wrapper">
+                  <!-- <div class="hero__bgImage">
+                     <figure class="image_wrapper">
+                     <img src="/assets/img/Cube0.png" alt='background hero'/>
+                     </figure>
+                  </div> -->
+               <div class="hero__contentWrapper">
+                  <h1 class="hero__title wow fadeInUp" data-wow-delay="0.4s">I'm Ona, a Barcelona–based
+                     <br/>
+                     <span style="font-size: 1.60rem;">ux/ui engineer</span>
+                     <br/>
+                     Currently, part of the Young Jury Member at <a class="links" href="http://www.awwwards.com/" target="_blank" rel="noreferrer noopener">Awwwards</a></h1>
+               </div>
+            </div>
          </section>
+         <!-- <section class="section hero-resume">
+            <h1 class="wow fadeInUp" data-wow-delay="0.4s">Welcome to my life! If you are here, it's probably because you want to know more about me. 🤘</h1>
+         </section> -->
          <section class="timeline wow fadeInUp" data-wow-delay="0.2s">
             <div>
                <ul class="wow fadeInUp" data-wow-delay="0.2s">
@@ -152,24 +170,27 @@ Anyway, it turns out that I was accepted to be part of the Young Jury at the ann
             </div>
          </section>
       </main>
-      <footer>
-         <section>
-            <article class="media">
-               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Follow me</h4>
+      <footer class="footer bg-section">
+         <div class="footer__wrapper">
+                <div class="footer__contact">
+                     <p class="footer__title">Drop me a line <!--<span>👋</span>--></p>
+                     <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
+                        onasolani@gmail.com
+                      </a>
+               </div>
+            <div class="footer__media">
                <ul>
-                  <li class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/onasolani" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.github.com/onasolani" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li class="wow fadeInUp" data-wow-delay="1s"><a href="https://onasolani.medium.com" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
+                  <li><Link to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</Link></li>
+                  <li><Link to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</Link></li>
+                  <li><Link to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</Link></li>
                </ul>
-            </article>
-            <article class="contactme">
-                  <h4 class="wow fadeInUp" data-wow-delay="0.8s">Drop me a line 👋</h4>
-                  <a href="mailto:onasolani@gmail.com" class="wow fadeInUp" data-wow-delay="1s">onasolani@gmail.com</a>
-            </article>
-         </section>
-         <div class="copyright wow fadeInUp" data-wow-delay="1s">
-            I designed and coded this website from scratch &copy;
+            </div>
+         </div>
+         <div class="footer__copyright">
+            I designed and coded this website from scratch &copy; 
             <script>document.write(new Date().getFullYear());</script>
+            <br/>
+            <i>I keep your privacy, for this reason this website don't save any cookie</i>
          </div>
       </footer>
    </div>
