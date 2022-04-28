@@ -1,53 +1,6 @@
-:root {
-    /* ---- fonts ---- */
-    --text: "HK Grotesk", -apple-system, "Segoe UI", sans-serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --heading: "Monument Extended", sans-serif;
- 
-    /* ---- sizes ---- */
-    --fs-xxs: 0.734rem; /*11.75px*/
-    --fs-xs: 0.844rem; /*13.50px*/
-    --fs-s: 1rem; /*16.00px*/
-    --fs-sm: 1.25rem; /*20.00px*/
-    --fs-m: 1.563rem; /*25.00px*/
-    --fs-ml: 1.953rem; /*31.25px*/
-    --fs-l: 2.441rem; /*39.06px*/
-    --fs-xl: 3.052rem; /*48.83px*/
-    --fs-display: 3.815rem; /*61.04px*/
- 
-    /* ---- weight values ---- */
-    --bold: 700;
-    --semibold: 600;
-    --medium: 500;
-    --regular: 400;
- 
-    /* ---- colors ---- */
-    --primary: #4ec5ab;
-    --white: #ffffff;
-    --black: #000000;
-    --neutral100: #F5F5F5;
-    --neutral200: #EEEEEE;
-    --neutral300: #E0E0E0;
-    --neutral400: #BDBDBD;
-    --neutral500: #9E9E9E;
-    --neutral600: #757575;
-    --neutral700: #616161;
-    --neutral800: #424242;
-    --neutral900: #212121;
- 
-    /* ---- breakpoints ---- */
-    /* --mobile-small: 20em /*320px*/;
-    /* --mobile-medium: 23.438em /*375px*/;
-    /* --mobile-large: 36em /*576px*/;
-    /* --tablet-small: 48em /*768px*/;
-    /* --tablet-medium: 62em /*992px*/;
-    /* --tablet-large: 64em /*1024px*/;
-    /* --desktop-small: 80em /*1280px*/;
-    /* --desktop-medium: 90em /*1440px*/;
-    /* --desktop-large: 120em /*1920px*/; 
- }
- 
-/* ------------ navbar ------------ */
+@import './global.css';
 
+/* ------------ navbar ------------ */
 .nav {
    width: 100%;
    height: 100px;
@@ -61,13 +14,6 @@
    left: 0;
    padding: 0 5%;
    padding-top: 40px;
-   /* height: 80px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   position: static;
-   z-index: 9998; */
 }
 
 .nav #brand a {
@@ -89,10 +35,10 @@
    font-weight: var(--medium);
 }
 
-.nav #menu li a:hover, .nav #brand a:hover{
-   color: var(--primary);
+/* .nav #menu li a:hover, .nav #brand a:hover{
+   color: var(--interactive01);
    transition: all 0.3s ease-out;
-}
+} */
 
 #toggle {
    font-weight: var(--medium);
@@ -101,11 +47,11 @@
    display: none;
    opacity: 0;
 }
-#toggle:hover{
+/* #toggle:hover{
    cursor: pointer;
-   color: var(--primary);
+   color: var(--interactive01);
    transition: all 0.3s ease-out;
-}
+} */
 
 #resize {
    height: 100vh;
@@ -116,7 +62,7 @@
    top: 0px;
    left: 0;
    position: fixed;
-   background: var(--black);
+   background: var(--ui-900);
    visibility: hidden;
    opacity: 0;
    transition: all 1s ease-out;
@@ -128,7 +74,7 @@
     top: 29px;
    font-weight: var(--medium);
    z-index: 9998;
-   color: var(--white);
+   color: var(--text02);
    z-index: 9998;
    cursor: pointer;
 }
@@ -145,13 +91,13 @@
     padding: 30px 0;
     font-family: var(--heading);
     font-size: var(--fs-sm);
-    color: var(--white);
+    color: var(--text02);
     line-height: 130%;
     transition: all 0.3s ease-out;
 }
 
 #resize #menu li:not(:last-child){
-    border-bottom: 1px solid var(--neutral600);
+    border-bottom: 1px solid var(--ui-600);
 }
 
 #resize.active {
@@ -175,10 +121,10 @@ body#scroll.scroll{
          font-weight: 600;
    }
 
-   #menu a:hover{
-      color: #4ec5ab;
+   /* #menu a:hover{
+      color: var(--interactive01);
       transition: .3s ease-in-out;
-   }
+   } */
 
    #resize li span {
          font-weight: bolder;
@@ -214,7 +160,7 @@ body#scroll.scroll{
 
 /* ------------ footer ------------ */
  .footer {
-    padding: 6rem 5% 2rem 5%;
+    padding: 10rem 5% 2rem 5%;
  }
  .footer a {
     display: block;
@@ -279,10 +225,10 @@ body#scroll.scroll{
 .footer__media li a ion-icon{
     font-size: var(--fs-sm);
 }
-.footer__media li a ion-icon:hover{
-    color: var(--primary);
+/* .footer__media li a ion-icon:hover{
+    color: var(--interactive01);
     transition: .2s ease-in-out;
-} 
+}  */
 .footer__copyright {
     font-size: var(--fs-xs);
 }

@@ -1,0 +1,59 @@
+
+:root {
+    /* ---- fonts ---- */
+    --text: "HK Grotesk", -apple-system, "Segoe UI", sans-serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --heading: "Obviously", "Monument Extended", sans-serif;
+ 
+    /* ---- sizes ---- */
+    --fs-xxs: 0.734rem; /*11.75px*/
+    --fs-xs: 0.844rem; /*13.50px*/
+    --fs-s: 1rem; /*16.00px*/
+    --fs-sm: 1.25rem; /*20.00px*/
+    --fs-m: 1.563rem; /*25.00px*/
+    --fs-ml: 1.953rem; /*31.25px*/
+    --fs-l: 2.441rem; /*39.06px*/
+    --fs-xl: 3.052rem; /*48.83px*/
+    --fs-display: 3.815rem; /*61.04px*/
+ 
+    /* ---- weight values ---- */
+    --bold: 700;
+    --semibold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+ 
+    /* ---- colors ---- */
+    /* text */
+    --text01: #141414;
+    --text02: #dbdbdb;
+    --text03: #bdbdbd;
+    --text04: #757575;
+    /* Interactive */
+    --interactive01: #4ec5ab;
+    --interactive02: #ffb300;
+    /* UI */
+    --ui-0: #FFFFFF;
+    --ui-50: #FAFAFA;
+    --ui-100: #F5F5F5;
+    --ui-200: #EEEEEE;
+    --ui-300: #dbdbdb;
+    --ui-400: #BDBDBD;
+    --ui-500: #9E9E9E;
+    --ui-600: #757575;
+    --ui-700: #5d5c5f;
+    --ui-800: #3a3a3c;
+    --ui-900: #141414;
+    --ui-1000: #000000;
+
+ 
+    /* ---- breakpoints ---- */
+    /* --mobile-small: 20em /*320px*/;
+    /* --mobile-medium: 23.438em /*375px*/;
+    /* --mobile-large: 30em /*480px*/;
+    /* --tablet-small: 48em /*768px*/;
+    /* --tablet-medium: 62em /*992px*/;
+    /* --tablet-large: 64em /*1024px*/;
+    /* --desktop-small: 80em /*1280px*/;
+    /* --desktop-medium: 90em /*1440px*/;
+    /* --desktop-large: 120em /*1920px*/; 
+ }

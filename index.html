@@ -26,10 +26,13 @@
    <meta property="twitter:title" content="Ona Solani — Digital designer & Web developer">
    <meta property="twitter:description" content="Ona Solani, a Barcelona-based digital designer and web developer who build digital products, brands, experiences through creative-driven solutions.">
    <meta property="twitter:image" content="https://res.cloudinary.com/dui0x8nb2/image/upload/v1607296870/favicon_nu9mz2.png">
+   <!--BootStrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <!-- css -->
    <link rel="stylesheet" href="/assets/stylesheets/animate.css">
    <link rel="stylesheet" href="/assets/stylesheets/style.css">
-   <link rel="stylesheet" href="/assets/stylesheets/footer.css"
+   <link rel="stylesheet" href="/assets/stylesheets/footer.css">
+   <!-- <script>document.documentElement.className = 'js';</script> -->
    <!-- Font -->
    <link href="//db.onlinewebfonts.com/c/1360e81c1500b16a3115fc890863a8a3?family=TerminaW00-Heavy" rel="stylesheet" type="text/css"/>
    <!-- ionicons -->
@@ -45,7 +48,8 @@
    <!-- CircleType -->
    <script src="/assets/js/circletype.min.js"></script>
    <!-- <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script> -->
-
+   <!--Bundle -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body id="scroll"> 
       <header>
@@ -76,15 +80,15 @@
          <section class="hero" data-bg="#FFFFFF">
             <div class="hero__wrapper">
                   <!-- <div class="hero__bgImage">
-                     <figure class="image_wrapper">
-                     <img src="/assets/img/Cube0.png" alt='background hero'/>
+                     <figure class="header__image_wrapper">
+                     <img src="/assets/img/29.-Pale-Cornflower-Blue_1.jpg" alt='background hero'/>
                      </figure>
                   </div> -->
                <div class="hero__contentWrapper">
-                  <h1 class="hero__title wow fadeInUp" data-wow-delay="0.4s">Building memorable experiences through design and technology</h1>
+                  <h1 class="hero__title wow fadeInUp" data-wow-delay="0.4s">make experiences matter</h1>
                </div>
             </div>
-            <div class="circular-wrapper wow fadeInUp" data-wow-delay="0.6s">
+            <div class="circular-wrapper wow fadeInUp" data-wow-delay="0.8s">
                <div class="circular-text">
                   <span id="rotated">
                      croll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; scroll &nbsp;•&nbsp; s
@@ -97,62 +101,65 @@
          </section>
          
          <section class="home__partners bg-section" data-bg="#FFFFFF">
-            <!-- <h3 class="wow fadeInUp" data-wow-delay="0.8s">A FEW OF THE PLACES I WORKED FOR</h2> -->
          </section>
-         <section class="section section-between home__projects bg-section" data-bg="#000000">
-            <h2 class="wow fadeInUp" data-wow-delay="0.6">Selected projects</h2>
-            <div class="projects-wrapper">
-               <div class="card wow fadeInUp" data-wow-delay="0.6s">
-                  <a href="/projects/fitmeal-app.html">
-                     <figure class="image_wrapper">
-                        <img src="/assets/img/fitmeal-mockup1.jpg" alt="fitmeal app project">
-                     </figure>
-                  </a>
-                  <div>
-                     <a href="/projects/fitmeal-app.html">
-                        <h3>Fitmeal App</h3></a>
-                     <span>UX/UI Design, Rapid Prototyping, Wireframing, User flows, Full Stack Dev</span>
-                  </div>
+         <section class="section-between home__projects bg-section" data-bg="#000000">
+            <!-- <h2 class="wow fadeInUp" data-wow-delay="0.6">selected projects</h2> -->
+            <div id="carouselExampleCaptions" class="carousel slide wow fadeInUp " data-wow-delay="1s" data-bs-ride="carousel">
+               <!-- <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div> -->
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img src="/assets/img/fitmeal-mockup1.jpg" class="d-block w-100" alt="...">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>fitmeal app</h5>
+                     <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                     <a href="/projects/fitmeal-app.html" class="btn">Learn more</a>
+                   </div>
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/assets/img/JISOO1.JPG" class="d-block w-100" alt="...">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>jisoo magazine</h5>
+                     <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                     <a href="/projects/jisoo-magazine.html" class="btn">Learn more</a>
+                   </div>
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/assets/img/travel-beyond.jpg" class="d-block w-100" alt="...">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>travel beyond</h5>
+                     <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                     <a href="/projects/travel-beyond.html" class="btn">Learn more</a>
+                   </div>
+                 </div>
                </div>
-               <div class="card wow fadeInUp" data-wow-delay="0.6s">
-                  <a href="/projects/tmb-wallet-app.html">
-                     <figure class="image_wrapper">
-                        <img src="/assets/img/tmb.jpg" alt="fitmeal app project">
-                     </figure>
-                  </a>
-                  <div>
-                     <a href="/projects/tmb-wallet-app.html"><h3>TMB wallet App</h3></a>
-                     <span>UX/UI Design, Rapid Prototyping, Wireframing, User flows, Design Thinking</span>
-                  </div>
-               </div>
-            </div>
-            <a class="btn" href="/projects.html">explore <ion-icon name="arrow-forward-outline"></ion-icon></a>
-         </section>
-         <!-- <section class="section section-between home__aboutme bg-section" data-bg="#FFFFFF">
-               <figure class="image_wrapper">
-                  <img src="/assets/img/avatar.jpg" alt="self-portrait">
-               </figure>
-               <div>
-                  <p>Hi! 👋 I'm Ona, a Barcelona–based UX/UI Engineer, who loves design and development👩🏻‍💻. I'm part of the Young Jury Member at <a class="links" href="http://www.awwwards.com/" target="_blank" rel="noreferrer noopener">Awwwards</a>.
-                     <br><br>
-                     Thanks to my experiences in life, I can bring sharp analytical skills and a commitment to add new values through creative-driven solutions 💭. </p>
-                  <a class="btn inverse" href="/aboutme.html">let's gossip 👀</a>
-               </div>
-         </section> -->
-      </main>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+      </section>
+    </main>
       <footer class="footer bg-section">
          <div class="footer__wrapper">
                 <div class="footer__contact">
-                     <p class="footer__title wow fadeInUp">Drop me a line <!--<span>👋</span>--></p>
+                     <p class="footer__title wow fadeInUp">Drop me a line</p>
                      <a class="footer__email wow fadeInUp" data-wow-delay="0.2s" href="mailto:onasolani@gmail.com">
                         onasolani@gmail.com
                       </a>
                </div>
             <div class="footer__media">
                <ul>
-                  <li class="wow fadeInUp" data-wow-delay="0.4s"><Link to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</Link></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.6s"><Link to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</Link></li>
-                  <li class="wow fadeInUp" data-wow-delay="0.8s"><Link to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</Link></li>
+                  <li class="wow fadeInUp" data-wow-delay="0.4s"><a to="https://www.linkedin.com/in/onasolani" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+                  <li class="wow fadeInUp" data-wow-delay="0.6s"><a to="https://www.github.com/onasolani" target="_blank" rel="noreferrer noopener">Github</a></li>
+                  <li class="wow fadeInUp" data-wow-delay="0.8s"><a to="https://onasolani.medium.com" target="_blank" rel="noreferrer noopener">Medium</a></li>
                </ul>
             </div>
          </div>
@@ -182,6 +189,6 @@
             });
          });
    </script>
-<script> console.log('Hi, explorer! 👋  I am delighted that you are inspecting my web 🤩. If you have any inquiring 🤔, ideas 💭, or compliments 😊, do not hesitate to say hello to me here 🙌: onasolani@gmail.com 📩.')</script>   
-</body>
+   <script> console.log('Hi, explorer! 👋  I am delighted that you are inspecting my web 🤩. If you have any inquiring 🤔, ideas 💭, or compliments 😊, do not hesitate to say hello to me here 🙌: onasolani@gmail.com 📩.')</script>   
+   </body>
 </html>
