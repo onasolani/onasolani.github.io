@@ -1,6 +1,14 @@
 @import './global.css';
 
 /*--- timeline ---*/
+.timeline{
+   margin-top: 6rem;
+}
+@media (min-width: 48em){
+   .timeline{
+      margin-top: 0;
+   }
+}
 .timeline>div .content span, .timeline article h2{
     font-weight: 600;
     font-size: 40px;
