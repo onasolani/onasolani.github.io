@@ -4,6 +4,12 @@
     font-style: normal;
     font-weight: 500;
 }
+@font-face {
+   font-family: "Monument Extended";
+   src: url('/assets/fonts/MonumentExtended-Regular.woff2') format("woff2");
+   font-style: normal;
+   font-weight: 400;
+}
  @font-face {
     font-family: "HK Grotesk";
     src: url('/assets/fonts/HKGrotesk-Regular.woff2') format("woff2");
