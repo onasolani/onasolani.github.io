@@ -2,7 +2,7 @@
 :root {
     /* ---- fonts ---- */
     --text: "HK Grotesk", -apple-system, "Segoe UI", sans-serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --heading: "Obviously", "Monument Extended", sans-serif;
+    --heading: "Obviously", sans-serif;
  
     /* ---- sizes ---- */
     --fs-xxs: 0.734rem; /*11.75px*/
@@ -16,11 +16,9 @@
     --fs-display: 3.815rem; /*61.04px*/
  
     /* ---- weight values ---- */
-    --bold: 700;
     --semibold: 600;
     --medium: 500;
     --regular: 400;
-    --light: 300;
  
     /* ---- colors ---- */
     /* text */
