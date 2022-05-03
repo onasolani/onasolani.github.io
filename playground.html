@@ -50,11 +50,6 @@
    <!-- Baffle -->
    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
    <!-- Snake Game -->
-   <!-- <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
-        integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet"> -->
 </head>
 <body> 
       <header>
@@ -83,41 +78,39 @@
       </header>
       <main>
          <section class="section section-first navbar-height">
-            <div id="blotter">
-               <div id="particle" class="wow fadeInUp"></div>
-               <div id="liquid" class="wow fadeInUp" data-wow-delay="0.4s"></div>
-               <div id="chanel" class="wow fadeInUp" data-wow-delay="0.6s"></div>
-               <div class="text-hover-container wow fadeInUp" data-wow-delay="1s"><div class="text-hover" data-text="Hover!">Hover!</div></div>
-               <div class="baffle wow fadeInUp" data-wow-delay="1.2s">BAFFLE FX</div>     
+            <h2 class="wow fadeInUp" data-wow-delay="0.8s">Playground experiments</h2>
+            <p class="wow fadeInUp" data-wow-delay="1s">Let's interact with some of my lates UI Development experiments</p>
+            <div id="blotter" class="wow fadeInUp"  data-wow-delay="1.5s">
+               <div id="particle"></div>
+               <div id="liquid"></div>
+               <div id="chanel"></div>
+               <div class="text-hover-container"><div class="text-hover" data-text="Hover!">Hover!</div></div>
+               <div class="baffle">BAFFLE FX</div>    
+               <div style="
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           width: 100%;
+                           height: 100%;"
+               >
+                  <a style="border-radius: 100%;
+                           color: #6e7888;
+                           background-color: #f3f4f8;
+                           padding: 20px;
+                           height: 120px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           width: 120px;" href="/snake-game.html">Snake Game <ion-icon name="arrow-forward-outline"></ion-icon></a>
+               </div>
             </div>
          </section> 
-         <!-- <section class="section section-between snake-game-wrapper">
-            <div class="snake-game noselect">
-               <div class="wrapper">
-                 <button id="replay">
-                   <i class="fas fa-play"></i>
-                   RESTART
-                 </button>
-                 <div id="canvas">
-             
-                 </div>
-                 <div id="ui">
-                   <h2>SCORE
-                   </h2>
-                   <span id="score">00</span>
-                 </div>
-               </div>
-               <div id="author">
-                 <h1>SNAKE</h1> <span>by Fariat</span>
-               </div>
-             </div>
-         </section>  -->
       </main>
       <footer class="footer bg-section">
          <div class="footer__wrapper">
                 <div class="footer__contact">
-                     <p class="footer__title">Drop me a line <!--<span>👋</span>--></p>
-                     <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
+                  <p class="footer__title wow fadeInUp">Drop me a line</p>
+                  <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
                         onasolani@gmail.com
                       </a>
                </div>
@@ -250,7 +243,6 @@
       }
       setInterval(displayHello, 3000);
    </script>
-   <!-- <script src="/assets/js/snake-game.js"></script> -->
    <script> console.log('Hi, explorer! 👋  I am delighted that you are inspecting my web 🤩. If you have any inquiring 🤔, ideas 💭, or compliments 😊, do not hesitate to say hello to me here 🙌: onasolani@gmail.com 📩.')</script>   
 </body>
 </html>

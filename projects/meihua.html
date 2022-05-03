@@ -67,15 +67,25 @@
       </div>
    </header>
       <main>
-         <div class="hero-project-details">
-            <section class="hero-project-title wow fadeInUp" data-wow-delay="0.4s">
-               <a href="../projects.html"><span><ion-icon name="arrow-back-outline"></ion-icon> Back</span></a>
-               <h1>Meihua, Beauty e–commerce</h1>
-               <h3>Front–end Development Case Study</h3>
-               <h5>2020</h5>
-            </section>
-            <figure class="hero-img meihua-cover wow fadeInUp" data-wow-delay="0.6s"></figure>
-            <div class="case-study-block">
+         <div class="project__wrapper section section-first navbar-height">
+            <a class="goBack wow fadeInUp" href="../projects.html"><ion-icon name="arrow-back-outline"></ion-icon>Go Back</a>
+            <section class="project__headerWrapper">
+                <div class="project__headerContent">
+                    <h1 class="project__headerTitle wow fadeInUp"  data-wow-delay="0.2s">Meihua, Beauty e–commerce</h1>
+                    <div class="project__tags wow fadeInUp"  data-wow-delay="0.4s">
+                        <span>Front–end Development</span>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+                        <span class="project__headerDate">2020</span>
+                    </div>
+                </div>
+               <div class="header__image-container project__headerImage wow fadeInUp" data-wow-delay="0.8s">
+                     <figure class="image_wrapper">
+                        <img src="/assets/img/meihua-mobile.jpg" alt='meihua image'/>
+                     </figure>
+               </div>
+            </section>   
+            <div class="case-study-block hero-project-details">
                <section class="wow fadeInUp" data-wow-delay="0.2s">
                   <h2>Meihua</h2>
                   <p>Meihua is the first Front–end Web Development project that I did at <a class="links" href="https://www.ironhack.com/en/web-development">IronHack Bootcamp</a>. It was surprisingly impressive to see what I could do after a week of JavaScript classes, and I had a week to design and develop the MVP.</p>
@@ -143,13 +153,15 @@
                </section>
             </div>
          </div>
-         <a class="more-btn wow fadeInUp" data-wow-delay="0.8s" href="../projects.html">See more projects</a>
+         <section class="section" style="display: flex; align-items: center; justify-content: center;">
+            <a class="btn inverse wow fadeInUp" data-wow-delay="0.8s" href="../projects.html">Explore more</a>
+         </section>
       </main>
       <footer class="footer bg-section">
          <div class="footer__wrapper">
                 <div class="footer__contact">
-                     <p class="footer__title">Drop me a line <!--<span>👋</span>--></p>
-                     <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
+                  <p class="footer__title wow fadeInUp">Drop me a line</p>
+                  <a class="footer__email wow fadeInUp" data-wow-delay="1s" href="mailto:onasolani@gmail.com">
                         onasolani@gmail.com
                       </a>
                </div>

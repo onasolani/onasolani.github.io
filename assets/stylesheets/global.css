@@ -63,6 +63,7 @@ a:hover{
    border: 1px solid var(--ui-300);
    color: var(--text02);
    font-size: var(--fs-s);
+   width: 100%;
 }
 .btn:hover{
    background-color: var(--ui-300);
@@ -77,7 +78,13 @@ a:hover{
 
 .btn.inverse{
    border-color: var(--ui-900);
-   color: var(--text01);
+   color: var(--text01) !important;
+}
+
+@media (min-width: 48em){
+   .btn{
+      width: fit-content;
+   }
 }
 
 .btn.inverse:hover{
@@ -103,37 +110,6 @@ a:hover{
    padding-bottom: 5rem;
 }
 
-.header__image-container{
-   height: auto;
-   width: 100%;
-   position: relative;
-   left: 0;
-   top: 0;
-   z-index: 1;
-   pointer-events: none;
-   display: flex;
-   margin-bottom: 4.5rem;
-   overflow: hidden;
-}
-.header__image-container.image_wrapper{
-   width: 100%;
-   display: block;
-   position: relative;
-}
-.header__image-container.image_wrapper img{
-   height: 100%;
-   width: 100%;
-   aspect-ratio: unset;
-   max-width: none;
-   -o-object-fit: cover;
-   object-fit: cover;
-   -o-object-position: top center;
-   object-position: top center;
-}
-.image_container.image_wrapper{
-   width: 100%;
-   display: block;
-}
 .image_wrapper img{
    height: 100%;
    width: 100%;
@@ -141,8 +117,8 @@ a:hover{
    max-width: none;
    -o-object-fit: cover;
    object-fit: cover;
-   -o-object-position: top center;
-   object-position: top center;
+   -o-object-position: center;
+   object-position: center;
 }
 
 .goBack{
@@ -157,3 +133,9 @@ a:hover{
 ion-icon{
    font-size: var(--fs-sm);
 }
+
+.image_container.image_wrapper{
+   width: 100%;
+   display: block;
+}
+

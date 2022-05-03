@@ -402,13 +402,6 @@
  }
  .hero-container-animate .animate-projects .btn {
    margin-top: 1.5rem;
-   color: var(--text01);
-   border-color: var(--ui-700);
-   width: 100%;
- }
- .hero-container-animate .animate-projects .btn:hover{
-    background-color: var(--ui-1000);
-    color: var(--text02);
  }
 
  @media (min-width: 48em){
@@ -558,14 +551,40 @@
    position: absolute;
    left: 42px;
 }
-/* .project__headerImage.header__image-container{
+
+.header__image-container{
+   height: auto;
+   width: 100%;
+   position: relative;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   pointer-events: none;
+   display: flex;
+   margin-bottom: 4.5rem;
+   overflow: hidden;
+}
+.project__headerImage.header__image-container figure{
+   width: 100%;
    height: 15rem;
+   display: block;
+   position: relative;
+}
+.project__headerImage.header__image-container figure img{
+   height: 100%;
+   width: 100%;
+   aspect-ratio: unset;
+   max-width: none;
+   -o-object-fit: cover;
+   object-fit: cover;
+   -o-object-position: center;
+   object-position: center;
 }
 @media (min-width: 48em) {
-   .project__headerImage.header__image-container{
+   .project__headerImage.header__image-container figure{
       height: 30rem;
    }
-} */
+} 
 
 /* @media (min-width: 48.938em) {
    .project__headerImage{
