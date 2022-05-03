@@ -80,6 +80,11 @@ a:hover{
    border-color: var(--ui-900);
    color: var(--text01) !important;
 }
+.btn.inverse:hover{
+   border-color: var(--ui-900);
+   background-color: var(--ui-900);
+   color: var(--text02) !important;
+}
 
 @media (min-width: 48em){
    .btn{
