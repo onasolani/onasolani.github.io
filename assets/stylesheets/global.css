@@ -44,10 +44,29 @@ input{
 a{
    text-decoration: none;
    color: inherit;
+   display: inline-block;
+   padding: 5px 10px;
+   position: relative;
 }
 a:hover{
    color: inherit;
 }
+a:after {    
+   background: none repeat scroll 0 0 transparent;
+   bottom: 0;
+   content: "";
+   display: block;
+   height: 1.5px;
+   left: 50%;
+   position: absolute;
+   background: #161616;
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   width: 0;
+ }
+ a:hover:after { 
+   width: 100%; 
+   left: 0; 
+ }
 
 .btn{
    align-items: center;
