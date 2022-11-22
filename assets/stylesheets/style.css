@@ -1,5 +1,9 @@
 @import './global.css';
 
+ol, ul {
+   padding: 0;
+}
+
 #noise {
    position: fixed;
    top: 0;
@@ -57,19 +61,29 @@
    border-radius: 50%;
    background-color: var(--interactive02);
 }
+@media(max-width: 64em){
+   #cursor{
+      display: none;
+   }
+}
 
 /*--------------- hero ---------------*/
 .hero{
-   height: 100vh;
+   /* height: 100vh; */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
 .hero__wrapper{
    position: relative;
    display: flex;
    align-items: center;
-   justify-content: center;
+   /* justify-content: center; */
    width: 100%;
-   min-height: 28rem;
-   height: 80%;
+   height: 100%;
+   padding-top: 2rem;
+   /* min-height: 28rem; */
+   /* height: 80%; */
 }
 
 .hero__bgImage{
@@ -90,14 +104,15 @@
    display: flex;
    flex-direction: column;
    position: relative;
+   max-width: 44rem;
 }
 @media (min-width: 48em){
    .hero__contentWrapper{
       height: 26rem;
-      display: flex;
+      /* display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: center; */
    }
 }
 /* @media (min-width: 80em){
@@ -109,15 +124,14 @@
 } */
 .hero__title{
    font-family: var(--heading);
-   font-size: var(--fs-ml);
+   font-size: var(--fs-m);
    line-height: 130%;
-   text-align: center;
    font-weight: var(--regular);
-   max-width: 45rem;
+   /* max-width: 45rem; */
 }
 @media (min-width: 36em){
    .hero__title{
-      font-size: var(--fs-l);
+      font-size: var(--fs-ml);
       line-height: 120%;
    }
 }
@@ -127,10 +141,19 @@
       line-height: 120%;
    }
 }
-@media (min-width: 120em){
+/* @media (min-width: 120em){
    .hero__title{
-      font-size: var(--fs-display);
+      font-size: var(--fs-xl);
       line-height: 120%;
+   }
+} */
+.hero__contentWrapper h2{
+   white-space: pre-line;
+   font-size: var(--fs-sm);
+}
+@media (min-width: 36em){
+   .hero__contentWrapper h2{
+      font-size: var(--fs-m);
    }
 }
 /*--------------- circular text scroll ---------------*/
@@ -142,6 +165,7 @@
    padding-bottom: 1rem;
    /* height: 42vh; */
    overflow: hidden;
+   width: 20rem;
 }
 
 .circular-text{

@@ -13,7 +13,11 @@
    top: 0;
    left: 0;
    padding: 0 5%;
-   padding-top: 40px;
+   padding-top: 1rem;
+}
+
+.nav #brand{
+   padding-left: 0;
 }
 
 .nav #brand a {
@@ -222,13 +226,19 @@ body#scroll.scroll{
 .footer__media li:not(:first-child, :last-child){
     margin: 0 30px;
 }
-.footer__media li a ion-icon{
-    font-size: var(--fs-sm);
-}
 /* .footer__media li a ion-icon:hover{
     color: var(--interactive01);
     transition: .2s ease-in-out;
 }  */
 .footer__copyright {
     font-size: var(--fs-xs);
+}
+.footer__copyright i {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer__copyright ion-icon{
+   margin-left: 0.25rem;
+   font-size: var(--fs-xs);
 }
